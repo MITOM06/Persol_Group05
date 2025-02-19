@@ -1,0 +1,174 @@
+[
+  {
+    "id": 1,
+    "owner": "tomford",
+    "name": "JAYSON SUNGLASSES",
+    "oldPrice": "505",
+    "newPrice": "465",
+    "sold": "391",
+    "star": "4",
+    "image": "../img3/JAYSON.jpg",
+    "images": [
+      "../img3/JAYSON.jpg",
+      "../img3/JAYSON-1.jpg",
+      "../img3/JAYSON-2.jpg",
+      "../img3/JAYSON-3.jpg",
+      "../img3/JAYSON-4.jpg"
+    ],
+    "description": "Shiny acetate style with shiny black metal T logo on the temple\n + 100% UV protection\n + SIZE: 52-21-145\n + Made in Italy"
+  },
+  {
+    "id": 2,
+    "owner": "tomford",
+    "name": "RIVER VINTAGE SQUARE SUNGLASSES",
+    "oldPrice": "465",
+    "newPrice": "405",
+    "sold": "391",
+    "star": "4",
+    "image": "../img3/RIVER VINTAGE SQUARE.jpg",
+    "images": [
+      "../img3/RIVER VINTAGE SQUARE.jpg",
+      "../img3/RIVER VINTAGE SQUARE-1.jpg",
+      "../img3/RIVER VINTAGE SQUARE-2.jpg",
+      "../img3/RIVER VINTAGE SQUARE-3.jpg",
+      "../img3/RIVER VINTAGE SQUARE-4.jpg"
+    ],
+    "description": "SHINY BLACK ACETATE FRONT AND SHINY TORTOISE TEMPLES WITH SHINY PALLADIUM METAL T LOGO AND METAL MATTE BLACK BOTTOM PART. GREEN AND ANTIREFLECTING\n + SHINY GREEN HORN ACETATE FRONT AND SHINY BLACK TEMPLES WITH SHINY ROSE GOLD METAL T LOGO AND BOTTOM PART. GRADIENT BLU GREY AND ANTIREFLECTING\n + 6 BASE CR39 LENSES.\n + 100% UV PROTECTION.\n + SIZE: 57\n + MADE IN ITALY"
+  },
+  {
+    "id": 3,
+    "owner": "tomford",
+    "name": "SQUARE TITANIUM AND HORN SUNGLASSES",
+    "oldPrice": "2000",
+    "newPrice": "1850",
+    "sold": "391",
+    "star": "4",
+    "image": "../img3/SQUARE TITANIUM AND HORN.jpg",
+    "images": [
+      "../img3/SQUARE TITANIUM AND HORN.jpg",
+      "../img3/SQUARE TITANIUM AND HORN-1.jpg",
+      "../img3/SQUARE TITANIUM AND HORN-2.jpg",
+      "../img3/SQUARE TITANIUM AND HORN-3.jpg"
+    ],
+    "description": "ELEGANT RIMLESS FRAME WITH STRAIGHT LINES AND SOPHISTICATED DETAILS, ENRICHED BY METAL 'T' LOGO DECORATION. THE TEMPLES COMBINE HORN, LIGHTWEIGHT TITANIUM AND HIGH QUALITY ACETATE TEMPLE TIPS.\n + SHINY STYLE COMBINATION BETWEEN HORN, TITANUM AND ACETATE WITH SHINY METAL T LOGO ON THE FRONT\n + 100% UV PROTECTION\n + PRIVATE COLLECTION\n + SIZE: 56-18-140\n + MADE IN ITALY"
+  },
+  {
+    "id": 4,
+    "owner": "tomford",
+    "name": "PHOTOCHROMATIC ACHILLES SUNGLASSES",
+    "oldPrice": "505",
+    "newPrice": "405",
+    "sold": "391",
+    "star": "4",
+    "image": "../img3/PHOTOCHROMATIC ACHILLES.jpg",
+    "images": [
+      "../img3/PHOTOCHROMATIC ACHILLES.jpg",
+      "../img3/PHOTOCHROMATIC ACHILLES-1.jpg",
+      "../img3/PHOTOCHROMATIC ACHILLES-2.jpg",
+      "../img3/PHOTOCHROMATIC ACHILLES-3.jpg"
+    ],
+    "description": "APRÈS-SKI FRAME WITH MASK FRONT AND SIDE SPOILERS. BOLD, NEW CONTOURS FORM THE TEMPLES. THE PHOTOCHROMIC LENSES MAKE IT PERFECT FOR A DAY NEAR THE SLOPES.\n + PHOTOCHROMIC LENSES DARKEN AND LIGHTEN GRADUALLY AND AUTOMATICALLY DEPENDING ON THE LIGHT EXPOSURE. THE COLOUR ADJUSTMENT IMPROVES THE EYE-PROTECTION AND GIVES A HIGHER COMFORT IN ANY LIGHT CONDITION\n + SHINY PLASTIC STYLE WITH SHINY  METAL T LOGO ON THE TEMPLES.\n + PHOTOCHROMIC LENSES.\n + 100% UV PROTECTION\n + SIZE: 138-0-145\n + MADE IN ITALY"
+  },
+  {
+    "id": 5,
+    "owner": "tomford",
+    "name": "PHOTOCHROMATIC ILIAS SUNGLASSES",
+    "oldPrice": "535",
+    "newPrice": "500",
+    "sold": "391",
+    "star": "4",
+    "image": "../img3/PHOTOCHROMATIC ILIAS.jpg",
+    "images": [
+      "../img3/PHOTOCHROMATIC ILIAS.jpg",
+      "../img3/PHOTOCHROMATIC ILIAS-1.jpg",
+      "../img3/PHOTOCHROMATIC ILIAS-2.jpg",
+      "../img3/PHOTOCHROMATIC ILIAS-3.jpg"
+    ],
+    "description": "SOPHISTICATED SQUARE FRAME WITH BOLD FACETED RIMS. AVAILABLE IN INNOVATIVE TRANSPARENT AND STRIPED COLORS\n + SHINY BIO-BASED ACETATE STYLE WITH METAL T LOGO ON THE TEMPLES\n + PHOTOCHROMIC LENSES DARKEN AND LIGHTEN GRADUALLY AND AUTOMATICALLY DEPENDING ON THE LIGHT EXPOSURE. THE COLOUR ADJUSTMENT IMPROVES THE EYE-PROTECTION AND GIVES A HIGHER COMFORT IN ANY LIGHT CONDITION\n + 100% UV PROTECTION\n + SIZE: 50-22-145\n + MADE IN ITALY    "
+  },
+  {
+    "id": 6,
+    "owner": "tomford",
+    "name": "ICON NAVIGATOR SUNGLASSES",
+    "oldPrice": "700",
+    "newPrice": "650",
+    "sold": "391",
+    "star": "4",
+    "image": "../img3/ICON NAVIGATOR.jpg",
+    "images": [
+      "../img3/ICON NAVIGATOR.jpg",
+      "../img3/ICON NAVIGATOR-1.jpg",
+      "../img3/ICON NAVIGATOR-2.jpg",
+      "../img3/ICON NAVIGATOR-3.jpg"
+    ],
+    "description": "SOPHISTICATED ELEGANCE AND AN EXUBERANT PERSONALITY. A SEDUCTIVE FRAME DESIGNED TO GUIDE BEAUTY INTO THE FUTURE WITH DETAILS CREATED TO BE ICONIC.\n + SHINY ACETATE STYLE WITH SHINY METAL T LOGO ON THE TEMPLES\n + INNER TEMPLE WIRECORE WITH TOM FORD LOGO\n + REFINED GOLDEN COLOUR DETAILS\n + LENSES BY ZEISS\n + 100% UV PROTECTION\n + SIZE: 56-19-140\n + MADE IN ITALY\n + DEDICATED PACKAGING WITH CROSS BODY POUCH"
+  },
+  {
+    "id": 7,
+    "owner": "tomford",
+    "name": "NEUGHMAN SUNGLASSES",
+    "oldPrice": "590",
+    "newPrice": "550",
+    "sold": "391",
+    "star": "4",
+    "image": "../img3/NEUGHMAN.jpg",
+    "images": [
+      "../img3/NEUGHMAN.jpg",
+      "../img3/NEUGHMAN-1.jpg",
+      "../img3/NEUGHMAN-2.jpg",
+      "../img3/NEUGHMAN-3.jpg"
+    ],
+    "description": "Shiny acetate style with metal T logo on the temple.\n + 100% UV PROTECTION\n + SIZE: 60-15-145\n + MADE IN ITALY"
+  },
+  {
+    "id": 8,
+    "owner": "tomford",
+    "name": "LEATHER INSERT KEN SUNGLASSES",
+    "oldPrice": "580",
+    "newPrice": "550",
+    "sold": "391",
+    "star": "4",
+    "image": "../img3/LEATHER INSERT KEN.jpg",
+    "images": [
+      "../img3/LEATHER INSERT KEN.jpg",
+      "../img3/LEATHER INSERT KEN-1.jpg",
+      "../img3/LEATHER INSERT KEN-2.jpg",
+      "../img3/LEATHER INSERT KEN-3.jpg"
+    ],
+    "description": "VINTAGE PILOT STYLE CHARACTERIZED BY A LIGHT METAL CONSTRUCTION AND DROP SHAPE LENSES WITH SUBTLE LINES. THE LEATHER INSERT ON THE TOP BAR MAKE THIS STYLE EVEN MORE RETRO\n +SHINY METAL STYLE WITH METAL T LOGO ON THE TEMPLES\n + 100% UV PROTECTION\n + SIZE: 60-16-140\n + MADE IN ITALY"
+  },
+  {
+    "id": 9,
+    "owner": "tomford",
+    "name": "BRONSON SUNGLASSES",
+    "oldPrice": "560",
+    "newPrice": "500",
+    "sold": "391",
+    "star": "4",
+    "image": "../img3/BRONSON.jpg",
+    "images": [
+      "../img3/BRONSON.jpg",
+      "../img3/BRONSON-1.jpg",
+      "../img3/BRONSON-2.jpg",
+      "../img3/BRONSON-3.jpg"
+    ],
+    "description": "Shiny acetate style with metal 'T' logo decoration.\n + 100% UV protection.\n + SIZE: 60-12-140\n + MADE IN ITALY"
+  },
+  {
+    "id": 10,
+    "owner": "tomford",
+    "name": "BLUE BLOCK NAVIGATOR OPTICALS",
+    "oldPrice": "886",
+    "newPrice": "850",
+    "sold": "391",
+    "star": "4",
+    "image": "../img3/BLUE BLOCK NAVIGATOR.jpg",
+    "images": [
+      "../img3/BLUE BLOCK NAVIGATOR.jpg",
+      "../img3/BLUE BLOCK NAVIGATOR-1.jpg",
+      "../img3/BLUE BLOCK NAVIGATOR-2.jpg",
+      "../img3/BLUE BLOCK NAVIGATOR-3.jpg"
+    ],
+    "description": "SHINY TITANIUM STYLE WITH SHINY METAL T LOGO ON THE TEMPLE\n + SIZE: 54-18-145\n + MADE IN JAPAN"
+  }
+]
