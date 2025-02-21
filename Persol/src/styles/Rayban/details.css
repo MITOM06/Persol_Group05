@@ -1,0 +1,175 @@
+/* Các thẻ của slick */
+
+
+
+.slick-slider {
+    width: 80% !important; /* Tùy chỉnh độ rộng của slider */
+    margin: 0 auto; /* Canh giữa slider theo chiều ngang */
+    position: relative; /* Thiết lập để các mũi tên có thể được căn chỉnh bên trong */
+  }
+  
+  .slick-prev, .slick-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* Căn giữa theo chiều dọc */
+    padding-top: 1px !important;
+    font-size: 20px;
+    z-index: 10; /* Đảm bảo mũi tên luôn nằm trên ảnh */
+    cursor: pointer;
+    background-color: #000 !important; /* Đổi màu nền thành đen */
+    border: none !important; /* Xóa đường viền */
+    border-radius: 50% !important; /* Nếu muốn nút tròn */
+  
+  }
+  
+  .slick-prev {
+    left: 10px !important; /* Đặt mũi tên trái sát lề trái */
+  }
+  
+  .slick-next {
+    right: 10px  !important; /* Đặt mũi tên phải sát lề phải */
+  }
+  
+  
+  
+  .slick-slide img {
+    width: 100%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của phần tử */
+    height: 500px; /* Đảm bảo chiều cao tương ứng với phần chứa */
+    object-fit: cover; /* Giữ tỷ lệ hình ảnh, cắt nếu cần */
+    display: block;
+  }
+  
+  
+  
+  
+  
+    .rayban-product-info-text{
+      text-align: center;
+    }
+    .rayban-button-count{
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px; /* Khoảng cách giữa các phần tử */
+    }
+    .rayban-button-count-1{
+      display: flex;
+      align-items: center;
+      gap: 10px; /* Khoảng cách giữa các nút - và + */
+      padding: 5px 20px;
+      border: 2px solid #000; /* Tạo khung viền cho nút - và + */
+      border-radius: 20px;
+      font-size: 20px;
+    }
+  .rayban-button-count-2{
+    background-color: transparent;
+    border: transparent;
+    padding: 10px 15px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: #000;
+  }
+  .rayban-add-to-cart-button{
+    background-color: white;  /* Nền trắng */
+    color: black;  /* Chữ đen */
+    padding: 12px 24px;  /* Kích thước của nút */
+    font-size: 16px;
+    font-weight: 600;  /* Làm cho chữ đậm hơn một chút */
+    border: 2px solid black;  /* Viền đen */
+    border-radius: 50px;  /* Góc bo tròn */
+    text-transform: uppercase;  /* Chữ in hoa */
+    cursor: pointer;
+    transition: all 0.3s ease;  /* Hiệu ứng chuyển động mượt mà khi hover */
+  }
+  .rayban-add-to-cart-button:hover {
+    background-color: black;  /* Khi hover, nền sẽ chuyển thành đen */
+    color: white;  /* Chữ chuyển thành trắng */
+    border-color: white;  /* Viền chuyển sang màu trắng */
+    transform: scale(1.1);  /* Tăng kích thước nhẹ khi hover */
+  }
+  .rayban-add-to-cart-notification{
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    animation: fadeInOut 3s ease-out forwards; 
+  }
+  
+  /* Keyframes để tạo hiệu ứng fade-in, giữ nguyên một lúc rồi fade-out */
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0; /* Bắt đầu từ 0 (ẩn) */
+      transform: translateY(-20px); /* Thêm hiệu ứng di chuyển lên một chút */
+    }
+    20% {
+      opacity: 1; /* Hiển thị thông báo */
+      transform: translateY(0); /* Về vị trí ban đầu */
+    }
+    80% {
+      opacity: 1; /* Giữ thông báo hiển thị một chút */
+    }
+    100% {
+      opacity: 0; /* Mờ dần */
+      transform: translateY(20px); /* Di chuyển xuống một chút khi biến mất */
+    }
+  }
+  .rayban-btn-details{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+   font-size: 30px;
+   
+  }
+  .rayban-dropdown-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  }
+  .rayban-btn-download{
+    background-color: white;  /* Nền trắng */
+    color: black;  /* Chữ đen */
+    padding: 12px 24px;  /* Kích thước của nút */
+    font-size: 16px;
+    font-weight: 600;  /* Làm cho chữ đậm hơn một chút */
+    border: 2px solid black;  /* Viền đen */
+    border-radius: 50px;  /* Góc bo tròn */
+    text-transform: uppercase;  /* Chữ in hoa */
+    cursor: pointer;
+    transition: all 0.3s ease;  /* Hiệu ứng chuyển động mượt mà khi hover */
+  }
+  .rayban-btn-download:hover {
+    background-color: black;  /* Khi hover, nền sẽ chuyển thành đen */
+    color: white;  /* Chữ chuyển thành trắng */
+    border-color: white;  /* Viền chuyển sang màu trắng */
+    transform: scale(1.1);  /* Tăng kích thước nhẹ khi hover */
+  }
+
+  /*Button*/
+  .btn-details{
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    color: #636363;
+    text-shadow: 3px 3px 8px rgba(68, 68, 68, 0.3);  /* Bóng mờ nhẹ giúp nổi bật chữ */
+    cursor: pointer;
+  }
+  
+  .btn-details-2{
+    background-color: white;
+    border: black; 
+    color: grey; /* Màu chữ đen */
+    font-size: 20px; /* Kích thước chữ */
+    font-weight: bold; /* Đậm chữ */
+    cursor: pointer; /* Con trỏ chuột hình tay */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mượt mà */
+    height: auto;
+  }
+  

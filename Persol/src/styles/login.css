@@ -1,0 +1,137 @@
+.log-in {
+  background-color: #ffffff;
+  height: 1000px;
+  position: relative;
+}
+
+.log-in .join-the-fun {
+  color: transparent;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 96px;
+  font-weight: 700;
+  left: 262px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 443px;
+  white-space: nowrap;
+  width: 698px;
+}
+
+ .text-wrapper-P {
+  color: #000000;
+} 
+
+.brand {
+  color: #bc3a80;
+}
+
+.log-in .overlap-group-1 {
+  background-color: #e5f0f3;
+  height: 814px;
+  left: 1160px;
+  position: absolute;
+  top: 130px;
+  width: 630px;
+}
+
+.username {
+  color: #000000;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 41px;
+  width: 260px;
+}
+
+.log-in .password {
+  color: #000000;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 40px;
+  font-weight: 700;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 230px;
+  width: 260px;
+  
+}
+
+.log-in .fillpassword {
+  background-color: #ffffff;
+  height: 100px;
+  left: 50px;
+  border-color: #4aa6fa;
+  border-radius: 20px;
+  position: absolute;
+  top: 290px;
+  width: 550px;
+  font-size: 35px;
+}
+
+.log-in .fillusername {
+  background-color: #ffffff;
+  height: 100px;
+  border-color: #4aa6fa;
+  left: 50px;
+  border-radius: 20px;
+  position: absolute;
+  top: 100px;
+  width: 550px;
+  font-size: 35px;
+}
+
+
+
+.loginP {
+  font-family: "Poppins-Bold", Helvetica;
+  height: 100px;
+  left: 50px;
+  position: absolute;
+  top: 500px;
+  width: 550px;
+  border-radius: 50px;
+  font-size: 40px;
+  background-color: #4aa6fa;
+}
+
+.log-in .create-account {
+  font-family: "Poppins-Bold", Helvetica;
+  height: 100px;
+  left: 50px;
+  position: absolute;
+  top: 620px;
+  width: 550px;
+  border-radius: 50px;
+  font-size: 40px;
+  background-color: #4aa6fa;
+}
+
+/* .box .log-in{
+  background-color: black ;
+} */
+
+.notifications {
+  left: 1480px;
+   position:absolute;
+   width: 520px;
+top: 600px;
+  transform: translateX(-50%);
+background-color: red;
+align-items: center;
+  color: black;
+  padding: 15px 25px; 
+  border-radius: 8px;
+  font-size: 20px; 
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  z-index: 1000;
+}  
+ 
