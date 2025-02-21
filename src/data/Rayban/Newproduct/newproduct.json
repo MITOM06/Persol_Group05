@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "name": "CLUBMASTER CLASSIC",
+      "image": "/raybanimg/newproduct/n1.png",
+      "image1": "/raybanimg/sunglasses/carousel/s1/s1c1.png",
+      "image2": "/raybanimg/sunglasses/carousel/s1/s1c2.png",
+      "image3": "/raybanimg/sunglasses/carousel/s1/s1c3.png",
+      "image4": "/raybanimg/sunglasses/carousel/s1/s1c4.png",
+      "description": "Classic Rayban Wayfarer eyeglasses with a stylish tortoise shell frame. Perfect for everyday wear with a comfortable fit.",
+      "price": "$ 435",
+      "model": "Style 819535 J0740 2750",
+      "star": 5.0
+    },
+    {
+      "id": 2,
+      "name": "ORIGINAL WAYFARER CLASSIC",
+      "image": "/raybanimg/newproduct/n2.png",
+      "image1": "/raybanimg/newproduct/carousel/s2/c1.png",
+      "image2": "/raybanimg/newproduct/carousel/s2/c2.png",
+      "image3": "/raybanimg/newproduct/carousel/s2/c3.png",
+      "image4": "/raybanimg/newproduct/carousel/s2/c4.png",
+      "description": "Classic Rayban Wayfarer eyeglasses with a stylish tortoise shell frame. Perfect for everyday wear with a comfortable fit.",
+      "price": "$ 505",
+      "star": 4.5
+    },
+    {
+      "id": 3,
+      "name": "NEW WAYFARER CLASSIC",
+      "image": "/raybanimg/newproduct/n3.png",
+      "image1": "/raybanimg/newproduct/carousel/s3/c1.avif",
+      "image2": "/raybanimg/newproduct/carousel/s3/c2.avif",
+      "image3": "/raybanimg/newproduct/carousel/s3/c3.avif",
+      "image4": "/raybanimg/newproduct/carousel/s3/c4.avif",
+      "description": "Classic Rayban Wayfarer eyeglasses with a stylish tortoise shell frame. Perfect for everyday wear with a comfortable fit.",
+      "price": "$ 605",
+      "star": 3.0
+    },
+    {
+      "id": 4,
+      "name": "HEXAGONAL FLAT LENSES",
+      "image": "/raybanimg/newproduct/n4.png",
+      "image1": "/raybanimg/newproduct/carousel/s4/c1.avif",
+      "image2": "/raybanimg/newproduct/carousel/s4/c2.avif",
+      "image3": "/raybanimg/newproduct/carousel/s4/c3.avif",
+      "image4": "/raybanimg/newproduct/carousel/s4/c4.avif",
+      "description": "Classic Rayban Wayfarer eyeglasses with a stylish tortoise shell frame. Perfect for everyday wear with a comfortable fit.",
+      "price": "$ 557",
+      "star": 5.0
+    },
+    {
+      "id": 5,
+      "name": "JUSTIN CLASSIC",
+      "image": "/raybanimg/newproduct/n5.png",
+      "image1": "/raybanimg/newproduct/carousel/s5/c1.avif",
+      "image2": "/raybanimg/newproduct/carousel/s5/c2.avif",
+      "image3": "/raybanimg/newproduct/carousel/s5/c3.avif",
+      "image4": "/raybanimg/newproduct/carousel/s5/c4.avif",
+      "description": "Classic Rayban Wayfarer eyeglasses with a stylish tortoise shell frame. Perfect for everyday wear with a comfortable fit.",
+      "price": "$ 731",
+      "star": 4.5
+    },
+    {
+      "id": 6,
+      "name": "NEW CLUBMASTER",
+      "image": "/raybanimg/newproduct/n6.png",
+      "image1": "/raybanimg/newproduct/carousel/s6/c1.avif",
+      "image2": "/raybanimg/newproduct/carousel/s6/c2.avif",
+      "image3": "/raybanimg/newproduct/carousel/s6/c3.avif",
+      "image4": "/raybanimg/newproduct/carousel/s6/c4.avif",
+      "description": "Classic Rayban Wayfarer eyeglasses with a stylish tortoise shell frame. Perfect for everyday wear with a comfortable fit.",
+      "price": "$ 776",
+      "star": 2.5
+    }
+  ]

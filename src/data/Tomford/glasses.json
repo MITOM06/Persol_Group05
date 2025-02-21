@@ -1,0 +1,443 @@
+[
+   {
+      "id": 1,
+      "owner": "tomford",
+      "name": "ICON SQUARE SUNGLASSES",
+      "price": "$700",
+      "sold": "391",
+      "star": "4",
+      "image": "../img/ICON SQUARE.jpg",
+      "images": [
+         "../img/ICON SQUARE.jpg",
+         "../img/ICON SQUARE-1.jpg",
+         "../img//ICON SQUARE-2.jpg",
+         "../img//ICON SQUARE-3.jpg"
+      ],
+      "description": "SQUARE, CARVED, IMPECCABLE. LUXURIOUS SUNGLASSES WITH UNPARALLELED DETAILS \n+ SHINY ACETATE STYLE WITH SHINY METAL T LOGO ON THE TEMPLE.\n + INNER TEMPLE WIRECORE WITH TOM FORD LOGO\n + REFINED GOLDEN COLOUR DETAILS\n + LENSES BY ZEISS\n + 100% UV PROTECTION\n + SIZE: 53-20-145\n + MADE IN ITALY\n + DEDICATED PACKAGING WITH CROSS BODY POUCH"
+   },
+   {
+      "id": 2,
+      "owner": "tomford",
+      "image": "../img/FAUSTO.jpg",
+      "images": [
+         "../img/FAUSTO.jpg",
+         "../img/FAUSTO-1.jpg",
+         "../img/FAUSTO-2.jpg",
+         "../img/FAUSTO-3.jpg"
+      ],
+      "name": "FAUSTO SUNGLASSES",
+      "price": "$495",
+      "description": "SHINY ACETATE STYLE WITH SHINY METAL T LOGO ON THE TEMPLE.\n + SIZE: 53-20-145\n + 100% UV PROTECTION LENSES\n + MADE IN ITALY"
+   },
+   {
+      "id": 3,
+      "owner": "tomford",
+      "image": "../img/ARNAUD.jpg",
+      "images": [
+         "../img/ARNAUD.jpg",
+         "../img/ARNAUD-1.jpg",
+         "../img/ARNAUD-2.jpg"
+      ],
+      "name": "ARNAUD SUNGLASSES",
+      "price": "$465",
+      "description": "SOFT SQUARED STYLE WITH ACETATE FRONT AND METAL TEMPLE ENRICHED BY METAL 'T' LOGO\n + SHINY ACETATE FRONT WITH SHINY METAL TEMPLE AND SHINY METAL T LOGO DECORATION\n + 100% UV PROTECTION\n + SIZE: 53-20-145\n + MADE IN ITALY"
+   },
+   {
+      "id": 4,
+      "owner": "tomford",
+      "image": "../img/POLARIZED.jpg",
+      "images": [
+         "../img/POLARIZED.jpg",
+         "../img/POLARIZED-1.jpg",
+         "../img/POLARIZED-2.jpg",
+         "../img/POLARIZED-3.jpg",
+         "../img/POLARIZED-4.jpg"
+      ],
+      "name": "POLARIZED HUDSON SUNGLASSES",
+      "price": "$585",
+      "description": "SHINY STYLE COMBINATION BETWEEN METAL AND PLASTIC WITH SHINY METAL T LOGO ON THE TEMPLE\n + 100% UV PROTECTION\n + SIZE: 55-18-145\n + MADE IN ITALY\n POLARIZED LENSES REDUCE GLARE AND ENSURE IMPROVED VISION AND CLARITY, WHILE GUARANTEEING PROTECTION AGAINST THE HARMFUL EFFECTS OF UV RAYS."
+   },
+   {
+      "id": 5,
+      "owner": "tomford",
+      "image": "../img/DAX.jpg",
+      "images": [
+         "../img/DAX.jpg",
+         "../img/DAX-1.jpg",
+         "../img/DAX-2.jpg",
+         "../img/DAX-3.jpg"
+      ],
+      "name": "DAX SUNGLASSES",
+      "price": "$455",
+      "description": "SHINY BLACK ACETATE STYLE WITH SHINY DARK GUNMETAL T LOGO ON THE TEMPLE AND SMOKE LENSES.\n + 100% UV PROTECTION\n + SIZE: 50-22-145\n + MADE IN ITALY"
+   },
+   {
+      "id": 6,
+      "owner": "tomford",
+      "image": "../img/GIULIO.jpg",
+      "images": [
+         "../img/GIULIO.jpg",
+         "../img/GIULIO-1.jpg",
+         "../img/GIULIO-2.jpg",
+         "../img/GIULIO-3.jpg",
+         "../img/GIULIO-4.jpg"
+      ],
+      "name": "GIULIO SUNGLASSES",
+      "price": "$300",
+      "description": "+ SHINY ACETATE STYLE WITH SHINY METAL T LOGO ON THE TEMPLE\n + 100% UV PROTECTION\n + SIZE: 59-18-145\n + MADE IN ITALY"
+   },
+   {
+      "id": 7,
+      "owner": "tomford",
+      "image": "../img/BLUE BLOCK.jpg",
+      "images": [
+         "../img/BLUE BLOCK.jpg",
+         "../img/BLUE BLOCK-1.jpg",
+         "../img/BLUE BLOCK-2.jpg",
+         "../img/BLUE BLOCK-3.jpg"
+      ],
+      "name": "BLUE BLOCK SUNGLASSES",
+      "price": "$440",
+      "description": "+ SHINY ACETATE STYLE WITH METAL 'T' LOGO DECORATION\n + 100% UV PROTECTION\n + SIZE: 51-18-145\n + MADE IN ITALY"
+   },
+   {
+      "id": 8,
+      "owner": "tomford",
+      "image": "../img/BRONZON.jpg",
+      "images": [
+         "../img/BRONZON.jpg",
+         "../img/BRONZON-1.jpg",
+         "../img/BRONZON-2.jpg",
+         "../img/BRONZON-3.jpg",
+         "../img/BRONZON-4.jpg"
+      ],
+      "name": "BRONZON SUNGLASSES",
+      "price": "$560",
+      "description": "+ SHINY ACETATE STYLE WITH METAL 'T' LOGO DECORATION\n + 100% UV PROTECTION\n + SIZE: 60-12-140\n + MADE IN ITALY"
+   },
+   {
+      "id": 9,
+      "owner": "tomford",
+      "image": "../img/MARCUS.jpg",
+      "images": [
+         "../img/MARCUS.jpg",
+         "../img/MARCUS-1.jpg",
+         "../img/MARCUS-2.jpg",
+         "../img/MARCUS-3.jpg",
+         "../img/MARCUS-4.jpg"
+      ],
+      "name": "MARCUS SUNGLASSES",
+      "price": "$505",
+      "description": "+ SHINY ACETATE STYLE WITH SHINY METAL T LOGO ON THE TEMPLE\n + 100% UV PROTECTION\n + SIZE: 60-13-140\n + MADE IN ITALY"
+   },
+   {
+      "id": 10,
+      "owner": "tomford",
+      "image": "../img/LEON.jpg",
+      "images": [
+         "../img/LEON.jpg",
+         "../img/LEON-1.jpg",
+         "../img/LEON-2.jpg",
+         "../img/LEON-3.jpg"
+      ],
+      "name": "LEON SUNGLASSES",
+      "price": "$550",
+      "description": "+ SHINY METAL STYLE WITH SHINY METAL T LOGO ON THE TEMPLES\n + 100% UV PROTECTION\n + SIZE: 62-12-140\n + MADE IN ITALY"
+   },
+   {
+      "id": 11,
+      "owner": "tomford",
+      "image": "../img/REGGIE.jpg",
+      "images": [
+         "../img/REGGIE.jpg",
+         "../img/REGGIE-1.jpg",
+         "../img/REGGIE-2.jpg",
+         "../img/REGGIE-3.jpg",
+         "../img/REGGIE-4.jpg"
+      ],
+      "name": "REGGIE SUNGLASSES",
+      "price": "$495",
+      "description": "+ SHINY METAL STYLE WITH METAL T TEMPLE DECORATION\n + 100% UV PROTECTION\n + SIZE: 61-14-140\n + MADE IN ITALY "
+   },
+   {
+      "id": 12,
+      "owner": "tomford",
+      "image": "../img/KEMP.jpg",
+      "images": [
+         "../img/KEMP.jpg",
+         "../img/KEMP-1.jpg",
+         "../img/KEMP-2.jpg",
+         "../img/KEMP-3.jpg",
+         "../img/KEMP-4.jpg"
+      ],
+      "name": "KEMP SUNGLASSES",
+      "price": "$360",
+      "description": "VINTAGE INSPIRED NAVIGATOR STYLE MADE IN ACETATE. PROMINENT TOP BAR COMBINED WITH A THIN SILHOUETTE FOR PEOPLE SEARCHING FOR A RETRÒ ALLURE\n + SHINY ACETATE STYLE WITH SHINY METAL T LOGO ON THE TEMPLES.\n + 100% UV PROTECTION\n + SIZE: 59-15-145\n + MADE IN ITALY"
+   },
+   {
+      "id": 13,
+      "owner": "tomford",
+      "image": "../img/TURNER.jpg",
+      "images": [
+         "../img/TURNER.jpg",
+         "../img/TURNER-1.jpg",
+         "../img/TURNER-2.jpg",
+         "../img/TURNER-3.jpg"
+      ],
+      "name": "TURNER SUNGLASSES",
+      "price": "$550",
+      "description": "EXUBERANT ACETATE FRAME WITH STRONG BOLD TEMPLES EMBRACING  THE FRAME. FEATURING SMALL SPOILERS ON THE SIDE AND FACETING ON THE EYERIMS.THE STYLE IS ENRICHED BY THE METAL 'T' TEMPLE DECORATION AND METAL 'T' LOGO DECORATION. MADE IN BIO-BASED ACETATE.\n + SHINY ACETATE STYLE WITH SHINY METAL T LOGO ON THE TEMPLES.\n + 100% UV PROTECTION\n + SIZE: 58-15-140\n + MADE IN ITALY"
+   },
+   {
+      "id": 14,
+      "owner": "tomford",
+      "image": "../img/BARRON.jpg",
+      "images": [
+         "../img/BARRON.jpg",
+         "../img/BARRON-1.jpg",
+         "../img/BARRON-2.jpg",
+         "../img/BARRON-3.jpg"
+      ],
+      "name": "BARRON SUNGLASSES",
+      "price": "$360",
+      "description": "ACETATE STYLE WITH LIGHT CONSTRUCTION. HOLLOW SURFACES AND SMOOTH LINES SHOWCASE THE ICONIC T LOGO IN A PERFECT WAY\n + SHINY ACETATE STYLE WITH SHINY METAL T LOGO ON THE TEMPLES.\n + 100% UV PROTECTION\n + SIZE: 54-20-145\n + MADE IN ITALY"
+   },
+   {
+      "id": 15,
+      "owner": "tomford",
+      "image": "../img/EZRA.jpg",
+      "images": [
+         "../img/EZRA.jpg",
+         "../img/EZRA-1.jpg",
+         "../img/EZRA-2.jpg",
+         "../img/EZRA-3.jpg"
+      ],
+      "name": "EZRA SUNGLASSES",
+      "price": "$415",
+      "description": "+ SHINY ACETATE STYLE WITH SHINY METAL T LOGO ON THE TEMPLES\n + 100% UV PROTECTION\n + SIZE: 54-19-140\n + MADE IN ITALY"
+   },
+
+   {
+      "id": 16,
+      "owner": "tomford",
+      "image": "../img/LUCIA.jpg",
+      "images": [
+         "../img/LUCIA.jpg",
+         "../img/LUCIA-1.jpg",
+         "../img/LUCIA-2.jpg",
+         "../img/LUCIA-3.jpg"
+      ],
+      "name": "LUCIA SUNGLASSES",
+      "price": "$505",
+      "description": "Shiny acetate style with shiny  metal T logo on the temples.\n + 100% UV protection\n + SIZE: 54-16-140\n + Made in Italy"
+   },
+
+   {
+      "id": 17,
+      "owner": "tomford",
+      "image": "../img/REN.jpg",
+      "images": [
+         "../img/REN.jpg",
+         "../img/REN-1.jpg",
+         "../img/REN-2.jpg",
+         "../img/REN-3.jpg"
+      ],
+      "name": "REN SUNGLASSES",
+      "price": "$505 -$535",
+      "description": "FLAMBOYANT FRAME WITH A BOLD, ROUNDED GEOMETRY AND CURVED BROW RIMS. AVAILABLE WITH PHOTOCHROMIC LENSES, AND IN BIO-BASED ACETATE IN SEVERAL COLORWAYS\n + SHINY BIO-BASED ACETATE STYLE WITH METAL T LOGO ON THE TEMPLES.\n + 100% UV PROTECTION\n + SIZE: 60-20-135\n + MADE IN ITALY"
+   },
+
+   {
+      "id": 18,
+      "owner": "tomford",
+      "image": "../img/KEATING.jpg",
+      "images": [
+         "../img/KEATING.jpg",
+         "../img/KEATING-1.jpg",
+         "../img/KEATING-2.jpg",
+         "../img/KEATING-3.jpg"
+      ],
+      "name": "KEATING SUNGLASSES",
+      "price": "$535",
+      "description": "METAL PILOT FRAME WITH AN UNCONVENTIONAL LENS DESIGN AND SLIM TEMPLES. LENSES IN THE BRAND'S ICONIC GOLD-TONE SHADE.\n +SHINY METAL STYLE WITH METAL T LOGO ON THE TEMPLES\n + 100% UV PROTECTION\n + SIZE: 71-3-135\n + MADE IN ITALY"
+   },
+
+   {
+      "id": 18,
+      "owner": "tomford",
+      "image": "../img/POLARIZED LAUREN.jpg",
+      "images": [
+         "../img/POLARIZED LAUREN.jpg",
+         "../img/POLARIZED LAUREN-1.jpg",
+         "../img/POLARIZED LAUREN-2.jpg"
+
+      ],
+      "name": "POLARIZED LAUREN SUNGLASSES",
+      "price": "$515",
+      "description": "Shiny acetate style with metal 'T' logo decoration on the temple\n + POLARIZED LENSES REDUCE GLARE AND ENSURE IMPROVED VISION AND CLARITY, WHILE GUARANTEEING PROTECTION AGAINST THE HARMFUL EFFECTS OF UV RAYS\n + 100% UV protection lenses\n + Made in Italy\n + Size: 52-19-140"
+
+   },
+   {
+      "id": 19,
+      "owner": "tomford",
+      "image": "../img/WINONA.jpg",
+     "images": [
+      "../img/WINONA.jpg",
+      "../img/WINONA-1.jpg",
+      "../img/WINONA-2.jpg",
+      "../img/WINONA-3.jpg",
+      "../img/WINONA-4.jpg"
+     ],
+      "name": "WINONA SUNGLASSES",
+      "price": "$455",
+      "description": "Shiny acetate style with shiny metal T logo on the temple.\n + 100% UV protection\n + SIZE: 53-15-140\n + Made in Italy"
+   },
+
+   {
+      "id": 20,
+      "owner": "tomford",
+      "image": "../img/YVONNE.jpg",
+      "images": [
+         "../img/YVONNE.jpg",
+            "../img/YVONNE-1.jpg",
+      "../img/YVONNE-2.jpg",
+        "../img/YVONNE-3.jpg"
+      ],
+      "name": "YVONNE SUNGLASSES",
+      "price": "$580",
+      "description": "OVERSIZED FRAME WITH THE ICONIC INFINITY DESIGN AND FLOATING LENSES, REPRESENTING ETERNITY AND FEMININITY. THE STYLE IS ENRICHED BY THE METAL 'T' DECORATION AND METAL 'T' LOGO.\n + SHINY ACETATE STYLE WITH SHINY METAL T LOGO ON FRONT AND TEMPLES.\n + 100% UV PROTECTION\n + SIZE: 63-11-135\n + MADE IN ITALY"
+
+   },
+
+   {
+      "id": 21,
+      "owner": "tomford",
+      "image": "../img/NICKIE.jpg",
+      "images": [
+         "../img/NICKIE.jpg",
+            "../img/NICKIE-1.jpg",
+      "../img/NICKIE-2.jpg",
+        "../img/NICKIE-3.jpg"
+      ],
+      "name": "NICKIE SUNGLASSES",
+      "price": "$580",
+      "description": "WIDE BUTTERFLY STYLE, CHARACTERIZED BY SHARP ANGLES AND A SOPHISTICATED LOOK AND ENRICHED BY THE METAL 'T' TEMPLE DECORATION AND METAL 'T' LOGO.\n + SHINY METAL STYLE WITH METAL T LOGO ON THE TEMPLES\n + 100% UV PROTECTION\n + SIZE: 62-16-145\n + MADE IN ITALY"
+
+   },
+
+
+   {
+      "id": 22,
+      "owner": "tomford",
+      "image": "../img/WHITNEY OVERSIZED SOFT ROUND.jpg",
+      "images": [
+         "../img/WHITNEY OVERSIZED SOFT ROUND.jpg",
+            "../img/WHITNEY OVERSIZED SOFT ROUND-1.jpg"
+      ],
+      "name": "WHITNEY OVERSIZED SOFT ROUND SUNGLASSES",
+      "price": "$465",
+      "description": "Shiny transparent dark grey plastic frame with rose gold metal insert at temples and gradient smoke lenses\n + Shiny black plastic frame with gunmetal insert at temples and smoke lenses\n + Shiny transparent dark brown plastic frame with rose gold metal insert at temples and gradient brown lenses\n + Transparent brown gradient transparent rose plastic frame with rose gold metal insert at temples and gradient brown lenses\n + Shiny transparent deep blue plastic frame with gunmetal insert at temples and gradient smoke lenses\n + 100% UVA/UVB protection\n + Size: 64\n + Made in Italy"
+
+   },
+
+   {
+      "id": 23,
+      "owner": "tomford",
+      "image": "../img/EVANGELINE.jpg",
+      "images": [
+         "../img/EVANGELINE.jpg",
+            "../img/EVANGELINE-1.jpg",
+            "../img/EVANGELINE-2.jpg",
+            "../img/EVANGELINE-3.jpg"
+      ],
+      "name": "EVANGELINE SUNGLASSES",
+      "price": "$580",
+      "description": "OVERSIZED METAL FRAME WITH SLEEK AND SOFT LINES, ENRICHED BY THE METAL 'T' TEMPLE DECORATION AND METAL 'T' LOGO.\n +SHINY METAL STYLE WITH METAL T LOGO ON THE TEMPLES\n +100% UV PROTECTION\n +SIZE: 63-14-140\n + MADE IN ITALY"
+
+   },
+
+   {
+      "id": 24,
+      "owner": "tomford",
+      "image": "../img/MORGAN.jpg",
+      "images": [
+         "../img/MORGAN.jpg",
+            "../img/MORGAN-1.jpg",
+            "../img/MORGAN-2.jpg",
+            "../img/MORGAN-3.jpg",
+            "../img/MORGAN-4.jpg"
+      ],
+      "name": "MORGAN SUNGLASSES",
+      "price": "$455",
+      "description": "Shiny acetate style with metal T logo\n + 100% UV protection\n + SIZE: 57-16-140\n + Made in Italy"
+   },
+
+   {
+      "id": 25,
+      "owner": "tomford",
+      "image": "../img/STELLA.jpg",
+      "images": [
+         "../img/STELLA.jpg",
+            "../img/STELLA-1.jpg",
+            "../img/STELLA-2.jpg",
+            "../img/STELLA-3.jpg"
+      ],
+      "name": "STELLA SUNGLASSES",
+      "price": "$550",
+      "description": "METAL FRAME WITH A SOPHISTICATED GEOMETRIC SHAPE. THE INNOVATIVE DESIGN OF THE SILHOUETTE HIGHLIGHTS THE ICONIC DETAILS.\n + SHINY METAL STYLE WITH SHINY METAL T LOGO ON THE TEMPLES.\n + 100% UV PROTECTION\n + SIZE: 67-2-135\n + MADE IN ITALY"
+
+   },
+
+   {
+      "id": 26,
+      "owner": "tomford",
+      "image": "../img/CHIARA.jpg",
+      "images": [
+         "../img/CHIARA.jpg",
+            "../img/CHIARA-1.jpg",
+            "../img/CHIARA-2.jpg",
+            "../img/CHIARA-3.jpg"
+      ],
+      "name": "CHIARA SUNGLASSES",
+      "price": "$465",
+      "description": "Shiny acetate style with shiny metal T logo on the temple.\n + 100% UV PROTECTION\n + SIZE: 60-17-135\n + MADE IN ITALY"
+   },
+
+
+   {
+      "id": 27,
+      "owner": "tomford",
+      "image": "../img/SELBY.jpg",
+      "images": [
+         "../img/SELBY.jpg",
+            "../img/SELBY-1.jpg",
+            "../img/SELBY-2.jpg",
+            "../img/SELBY-3.jpg",
+            "../img/SELBY-4.jpg"
+      ],
+      "name": "SELBY SUNGLASSES",
+      "price": "$415",
+      "description": "Shiny acetate style with shiny metal T logo on the temple.\n + 100% UV PROTECTION\n + SIZE: 55-19-140\n + MADE IN ITALY"
+
+   },
+
+   {
+      "id": 28,
+      "owner": "tomford",
+      "image": "../img/CARLA SOFT SQUARE.jpg",
+      "images": [
+         "../img/CARLA SOFT SQUARE.jpg",
+            "../img/CARLA SOFT SQUARE-1.jpg",
+            "../img/CARLA SOFT SQUARE-2.jpg",
+            "../img/CARLA SOFT SQUARE-3.jpg"
+           
+      ],
+      "name": "CARLA SOFT SQUARE SUNGLASSES",
+      "price": "$465",
+      "description": "Shiny brown metal front with shiny brown gradient lilac plastic temples and gradient brown lenses\n + Shiny rose gold metal front with shiny ivory plastic temples and gradient green lenses\n + 100% UVA/UVB protection\n + Size: 56\n + Made in Italy"
+
+   }
+
+
+
+]

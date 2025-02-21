@@ -1,0 +1,143 @@
+.log-in {
+  background-color: #ffffff;
+  height: 1000px;
+  position: relative;
+}
+
+.log-in .join-the-fun {
+  color: transparent;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 60px;
+  font-weight: 700;
+  left: 100px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 350px;
+  white-space: nowrap;
+  width: 698px;
+}
+
+ .text-wrapper-P {
+  color: #000000;
+} 
+
+.brand {
+  color: #bc3a80;
+}
+
+.log-in .overlap-group-1 {
+  background-color: #e5f0f3;
+  border-radius: 30px;
+  height: 500px;
+  left: 600px;
+  position: absolute;
+  top: 130px;
+  width: 480px;
+}
+
+.username {
+  color: #000000;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 41px;
+  width: 260px;
+}
+
+.log-in .fillusername {
+  background-color: #ffffff;
+  top: 80px;
+  height: 60px;
+  width: 400px;
+  border-color: #4aa6fa;
+  left: 50px;
+  border-radius: 20px;
+  position: absolute;
+ 
+  
+  font-size: 35px;
+}
+
+.log-in .password {
+  color: #000000;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 50px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 180px;
+  width: 260px;
+  
+}
+
+.log-in .fillpassword {
+  background-color: #ffffff;
+  height: 60px;
+  width: 400px;
+  left: 50px;
+  border-color: #4aa6fa;
+  border-radius: 20px;
+  position: absolute;
+  top: 220px;
+  font-size: 35px;
+}
+
+
+
+
+
+.loginP {
+  font-family: "Poppins-Bold", Helvetica;
+  height: 60px;
+  width: 400px;
+
+  left: 50px;
+  position: absolute;
+  top: 350px;
+  
+  border-radius: 50px;
+  font-size: 30px;
+  background-color: #4aa6fa;
+}
+
+.log-in .create-account {
+  font-family: "Poppins-Bold", Helvetica;
+  height: 60px;
+  width: 400px;
+  left: 50px;
+  position: absolute;
+  top: 420px;
+  
+  border-radius: 50px;
+  font-size: 30px;
+  background-color: #4aa6fa;
+}
+
+
+
+.notifications {
+  left: 800px;
+   position:absolute;
+   width: 300px;
+top: 670px;
+  transform: translateX(-50%);
+background-color: red;
+align-items: center;
+  color: black;
+  padding: 15px 25px; 
+  border-radius: 8px;
+  font-size: 10px; 
+  font-weight: bold;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: opacity 1s ease-in-out;
+  opacity: 1;
+  z-index: 1000;
+}  
+ 

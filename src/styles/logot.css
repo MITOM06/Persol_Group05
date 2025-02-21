@@ -1,0 +1,41 @@
+.logo-container {
+    background: #FFF;
+    box-shadow: 1px 5px 4px 1px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    max-width: 1000px; /* Giới hạn tối đa 1200px */
+    margin: 0 auto;    /* Căn giữa ngang */
+    padding: 20px;     /* Khoảng cách bên trong container */
+    height: 10vh;           /* Chiều cao của container là 100% chiều cao màn hình */
+ }
+ 
+ .mainlogo {
+    max-width: 100px;  
+    margin: 0 auto;    
+    padding-bottom: 10px;
+ }
+ 
+ .logo-container :hover {
+    transform: scale(1.05);
+ }
+ 
+ .mainlogo :hover {
+    transform: scale(1.05);
+ }
+ 
+ @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .mainlogo {
+    animation: fadeIn 0.8s ease-out;
+  }
+  
