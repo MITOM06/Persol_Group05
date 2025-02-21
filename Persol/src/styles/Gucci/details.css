@@ -1,0 +1,130 @@
+/* Chia layout ra làm 2 phần */
+.DetailsContainer1 {
+  display: flex;
+  flex-direction: row; /* Đặt các phần bên cạnh nhau theo chiều ngang */
+  gap: 50px; /* Khoảng cách giữa phần trái và phần phải */
+  padding: 20px;
+}
+
+.GucciDetailsLeft {
+  flex: 1; /* Phần carousel chiếm 1 phần không gian */
+  max-width: 600px; /* Đảm bảo carousel không quá rộng */
+}
+
+.GucciDetailsRight {
+  flex: 1; /* Phần chi tiết sản phẩm chiếm 1 phần không gian */
+  max-width: 600px; /* Đảm bảo phần chi tiết không quá rộng */
+}
+
+.container-button {
+  display: flex;
+  align-items: center;
+}
+
+.container-button-1 {
+  display: flex;
+  align-items: center;
+}
+
+.btn-count {
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.btn-add-to-cart {
+  padding: 10px 20px;
+  background-color: #FF5733;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-details {
+  margin-top: 20px;
+}
+
+.promocode {
+  margin-top: 10px;
+  background-color: #FF5733;
+}
+/* Căn giữa bảng */
+.imgtransport {
+  width: 100%; /* Đảm bảo bảng chiếm toàn bộ chiều rộng */
+  margin: 0 auto; /* Căn giữa bảng trong container */
+  border-collapse: collapse; /* Bỏ các khoảng cách giữa các ô */
+  text-align: center; /* Căn giữa văn bản trong các ô */
+}
+
+/* Căn giữa các ô trong bảng */
+.imgtransport td, .imgtransport th {
+  vertical-align: middle; /* Căn giữa theo chiều dọc */
+  padding: 10px; /* Thêm một chút padding cho các ô */
+  width: 100px;
+}
+
+/* Căn giữa hình ảnh trong các ô */
+.imgtransport img {
+  display: block; /* Làm cho hình ảnh thành một block */
+  margin: 0 auto; /* Căn giữa hình ảnh theo chiều ngang */
+}
+
+/* Style cho dòng tiêu đề */
+.imgtransport th {
+  font-weight: bold;
+  padding-top: 20px; /* Thêm khoảng cách ở phía trên cho đẹp */
+}
+
+/* Style cho container chứa nút tăng giảm */
+.container-button-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #000000; /* Khung bao quanh các nút */
+  border-radius: 30px; /* Bo góc mượt mà cho khung */
+  padding: 5px; /* Padding để các nút không bị dính vào nhau */
+  background-color: transparent; /* Nền trong suốt */
+}
+
+/* Style cho các nút tăng giảm số lượng */
+.btn-count {
+  padding: 10px 20px;
+  background-color: transparent; /* Nền trong suốt */
+  color: #000000; /* Màu chữ đen */
+  font-size: 18px;
+  font-weight: bold;
+  border: none; /* Bỏ viền của nút */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block; /* Đảm bảo các nút xếp theo hàng ngang */
+  width: 50px; /* Chiều rộng của nút */
+  text-align: center; /* Căn giữa chữ trong nút */
+  line-height: 10px; /* Căn giữa văn bản theo chiều dọc */
+}
+
+/* Hiệu ứng hover cho các nút tăng giảm số lượng */
+
+
+/* Style cho nút "Add to cart" */
+.btn-add-to-cart {
+  padding: 12px 30px;
+  background-color: transparent;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+/* Hiệu ứng hover cho nút "Add to cart" */
+.btn-add-to-cart:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}

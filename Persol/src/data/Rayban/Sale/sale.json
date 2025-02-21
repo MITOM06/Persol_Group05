@@ -1,0 +1,75 @@
+[
+    {
+      "id": 1,
+      "name": "CLUBMASTER CLASSIC",
+      "image": "/raybanimg/eyeglasses/e1.png",
+      "oldprice": "$ 999",
+      "price": "$ 435",
+      "model": "Style 819535 J0740 2750",
+      "star": 5.0
+    },
+    {
+      "id": 2,
+      "name": "ORIGINAL WAYFARER CLASSIC",
+      "image": "/raybanimg/eyeglasses/e2.png",
+      "price": "$ 505",
+      "oldprice": "$ 999",
+      "star": 3.5
+    },
+    {
+      "id": 3,
+      "name": "NEW WAYFARER CLASSIC",
+      "image": "/raybanimg/eyeglasses/e3.png",
+      "oldprice": "$ 999",
+      "price": "$ 605",
+      "star": 4.5
+    },
+    {
+      "id": 4,
+      "name": "HEXAGONAL FLAT LENSES",
+      "image": "/raybanimg/eyeglasses/e4.png",
+      "oldprice": "$ 999",
+      "price": "$ 557",
+      "star": 3.5
+    },
+    {
+      "id": 5,
+      "name": "JUSTIN CLASSIC",
+      "image": "/raybanimg/eyeglasses/e5.png",
+      "oldprice": "$ 999",
+      "price": "$ 731",
+      "star": 2.5
+    },
+    {
+      "id": 6,
+      "name": "NEW CLUBMASTER",
+      "image": "/raybanimg/eyeglasses/e6.png",
+      "oldprice": "$ 999",
+      "price": "$ 776",
+      "star": 1.5
+    },
+    {
+      "id": 7,
+      "name": "ERIKA CLASSIC",
+      "image": "/raybanimg/eyeglasses/e7.png",
+      "oldprice": "$ 999",
+      "price": "$ 490",
+      "star": 5.0
+    },
+    {
+      "id": 8,
+      "name": "ROUND METAL",
+      "image": "/raybanimg/eyeglasses/e8.png",
+      "oldprice": "$ 999",
+      "price": "$ 999",
+      "star": 3.5
+    },
+    {
+      "id": 9,
+      "name": "RB4376",
+      "image": "/raybanimg/eyeglasses/e9.png",
+      "oldprice": "$ 999",
+      "price": "$ 693",
+      "star": 4.5
+    }
+  ]
