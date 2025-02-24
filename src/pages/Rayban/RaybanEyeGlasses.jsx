@@ -55,8 +55,10 @@ const RaybanEyeGlassesHomePage = () => {
                   <img src={EyeGlasses.image} style={{ width: '300px', height: 'auto', borderRadius: '30px' }} className='rayban-hover-image' /> {/**gọi hàm và truyền product.id vào tham số productId*/}
                 </Link>
               </div>
-              <div>{EyeGlasses.name}</div>
-              <div style={{ color: 'red' }}>{EyeGlasses.price}</div>
+              <div className='rayban-text'>
+                <div>{EyeGlasses.name}</div>
+                <div style={{ color: 'red' }}>{EyeGlasses.price}</div>
+              </div>
               <Rating
                 initialRating={EyeGlasses.star} // Cài đặt số sao ban đầu từ dữ liệu sản phẩm
                 onChange={handleRatingChange} // Hàm xử lý khi thay đổi đánh giá

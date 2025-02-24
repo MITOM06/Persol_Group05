@@ -46,10 +46,11 @@ const RaybanSaleHomePage = () => {
                 </div>
               </div>
 
-
-              <div>{SaleProduct.name}</div>
-              <div style={{ color: '#555555', textDecoration: 'line-through' }}>{SaleProduct.oldprice}</div>
-              <div style={{ color: 'red' }}>{SaleProduct.price}</div>
+              <div className='rayban-text'>
+                <div>{SaleProduct.name}</div>
+                <div style={{ color: '#555555', textDecoration: 'line-through' }}>{SaleProduct.oldprice}</div>
+                <div style={{ color: 'red' }}>{SaleProduct.price}</div>
+              </div>
               <Rating
                 initialRating={SaleProduct.star} // Cài đặt số sao ban đầu từ dữ liệu sản phẩm
                 onChange={handleRatingChange} // Hàm xử lý khi thay đổi đánh giá

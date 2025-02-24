@@ -60,8 +60,10 @@ const RaybanNewProducts = () => {
               </div>
 
 
+              <div className='rayban-text'>
               <div>{Newproduct.name}</div>
               <div style={{ color: 'red' }}>{Newproduct.price}</div>
+              </div>
               <Rating
                 initialRating={Newproduct.star} // Cài đặt số sao ban đầu từ dữ liệu sản phẩm
                 onChange={handleRatingChange} // Hàm xử lý khi thay đổi đánh giá

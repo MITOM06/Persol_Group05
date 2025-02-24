@@ -55,8 +55,10 @@ const Rayban = () => {
                 <Link to={`/RaybanSunglasses/${Sunglasses.id}`}> {/* chèn giá trị vào trong chuỗi*/}
                   <img src={Sunglasses.image} style={{ width: '300px', height: 'auto', borderRadius: '30px' }} className='rayban-hover-image' /> {/**gọi hàm và truyền product.id vào tham số productId*/}
                 </Link>             </div>
-              <div>{Sunglasses.name}</div>
-              <div style={{ color: 'red' }}>{Sunglasses.price}</div>
+              <div className='rayban-text'>
+                <div>{Sunglasses.name}</div>
+                <div style={{ color: 'red' }}>{Sunglasses.price}</div>
+              </div>
               <Rating
                 initialRating={Sunglasses.star} // Cài đặt số sao ban đầu từ dữ liệu sản phẩm
                 onChange={handleRatingChange} // Hàm xử lý khi thay đổi đánh giá

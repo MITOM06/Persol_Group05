@@ -64,10 +64,13 @@
       transition: transform 0.3s ease-in-out;
     }
     .rayban-hover-image:hover{
-      transform: scale(1.2);
+      transform: scale(1.05);
     }
-  
-  
+
+    .rayban-text{
+      padding-top: 100px;
+      
+    }
     /* Đặt container của hình ảnh ở chế độ relative */
   
     .react-link, .react-link:visited, .react-link:hover, .react-link:active {
