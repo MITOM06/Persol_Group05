@@ -126,17 +126,18 @@ const SearchPage = () => {
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                 />
-                <div className="search-results">
+                <p></p>
+                <div className="search-resultsp">
                     {filteredProducts.length === 0 ? (
                         <p className="no-results">Sorry, the product you are looking for is not available.</p>
                     ) : (
                         filteredProducts.map((product) => (
-                            <div key={`${product.type}-${product.id}`} className="product-card">
+                            <div key={`${product.type}-${product.id}`} className="product-cardp">
                                 <Link to={`/${product.type}/${product.id}`} onClick={() => window.scrollTo(0, 0)}>
                                     <img
                                         src={getProductImage(product)}
                                         alt={product.name}
-                                        className="product-image"
+                                        className="product-imagep"
                                     />
                                     <h3>{product.name}</h3>
                                     <div className="price-info">

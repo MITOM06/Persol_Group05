@@ -1,4 +1,4 @@
-
+/* 
 .center{
     text-align: center;
     font-size: 24px;
@@ -202,11 +202,11 @@
 
  
  .product-image {
-  width: 100%; /* Hình ảnh tự động co giãn */
-  height: auto; /* Giữ nguyên tỷ lệ */
-  max-width: 500px; /* Giới hạn kích thước tối đa */
+  width: 100%; 
+  height: auto; 
+  max-width: 500px; 
   object-fit: cover;
-  border-radius: 10px; /* Bo góc đẹp hơn */
+  border-radius: 10px; 
   display: block;
   margin: 0 auto;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -214,7 +214,7 @@
 
 @media (max-width: 768px) {
   .product-image {
-    max-width: 300px; /* Giảm kích thước trên màn hình nhỏ */
+    max-width: 300px; 
   }
 }
 
@@ -229,4 +229,4 @@
   height: auto;
   object-fit: cover;
 }
-
+ */

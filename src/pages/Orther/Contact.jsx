@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import React from "react";
-import "../styles/contact.css";
-import Navbarp from "../components/Navbarp";
-import Logop from "../components/Logop";
+import "../../styles/Orther/contact.css";
+import Navbarp from "../../components/Navbarp";
+import Logop from "../../components/Logop";
 
 
 const ContactUs = () => {
@@ -75,7 +75,7 @@ const ContactUs = () => {
             allowFullScreen=""
             loading="lazy"
           ></iframe>
-          <p>Email: <a href="mailto:support@company.com">support@company.com</a></p>
+          <p>Email: <a href="mailto:NhanLT27@fe.edu.vn">NhanLT27@fe.edu.vn</a></p>
         </div>
       </div>
      

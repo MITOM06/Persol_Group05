@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Footer.css";
+import "../styles/Orther/Footer.css";
 import thanhtoan01 from "../imgs/imgft/thethanhtoan4.svg"
 import thanhtoan02 from "../imgs/imgft/thethanhtoan.svg"
 import thanhtoan03 from "../imgs/imgft/thethanhtaon5.webp"
@@ -37,13 +37,13 @@ const Footer = () => {
         <div className="footer-section">
           <h4>Persol</h4>
           <ul>
-            <li><a href="/sunglasses"></a>Persol Sunglasses</li>
-            <li><a href="/Eyeglasses"></a>Persol Eyeglasses</li>
+            <li><a href="/sunglasses">Persol Sunglasses</a></li>
+            <li><a href="/Eyeglasses">Persol Eyeglasses</a></li>
             <li>Persol Prescription Lenses</li>
             <li>Behind Persol</li>
             <li>Promo Access</li>
             <li>Makers Loyalty Program</li>
-            <li>Site Map</li>
+            <li><a href="/Sitemap">Site Map</a></li>
           </ul>
         </div>
 

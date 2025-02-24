@@ -37,7 +37,7 @@
   }
   
   /* Chi tiết sản phẩm */
-  .product-details {
+  .product-detailsp {
     margin-top: 1rem;
   }
   .detail-row {
@@ -267,4 +267,11 @@
 .other-product-name {
   font-size: 1rem; /* Tăng kích thước font */
   margin-top: 5px;
+}
+
+.iconc {
+  font-size: 100px;
+  cursor: pointer;
+  color: rgb(9, 9, 14);
+  padding-left:30px;
 }

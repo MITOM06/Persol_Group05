@@ -66,7 +66,7 @@ const TomfordNewproduct = () => {
         <h1> NEW ARRIVALS </h1>
         {products.slice(0, visibleProducts).map((product) => (
 
-          <div className="col col-" key={product.id}>
+          <div className="col" key={product.id}>
             <div className="center">
               <Link to={`/newproductstomford/${product.id}`}>
                 <div className="hover-img">
@@ -122,12 +122,12 @@ const TomfordNewproduct = () => {
         <h1>SALE PRODUCT</h1>
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={20}
-          slidesPerView={1} // Mặc định là 1 sản phẩm trên màn nhỏ
+          spaceBetween={300}
+          slidesPerView={1} 
           breakpoints={{
-            768: { slidesPerView: 2 }, // 2 sản phẩm trên tablet
-            1024: { slidesPerView: 3 }, // 3 sản phẩm trên laptop
-            1440: { slidesPerView: 4 } // 4 sản phẩm trên màn lớn
+            768: { slidesPerView: 2 }, 
+            1024: { slidesPerView: 3 }, 
+            1440: { slidesPerView: 4 } 
           }}
           navigation
           pagination={{ clickable: true }}
@@ -147,8 +147,8 @@ const TomfordNewproduct = () => {
                     {product.image ? (
                       <img
                         src={product.image}
-                        width="500"
-                        height="400"
+                        width="400"
+                        height="300"
                         alt={product.name}
                         onError={(e) => (e.target.src = "/images/default-image.jpg")}
                       />

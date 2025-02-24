@@ -2,7 +2,7 @@ import Logop from "../imgs/imgnb/PO_header_persol_logo.svg"
 import Logot from "../imgs/imgnb/tom-ford-logo-png_seeklogo-383930.png"
 import Logor from "../imgs/imgnb/z6305330183154_c91d836a3edd35bd6b408d3c0f08d1bf.jpg"
 import Logog from "../imgs/imgnb/download.png"
-import "../styles/logot.css"
+import "../styles/Orther/logot.css"
 import React from "react";
 import { Link } from "react-router-dom";
 const Logo = () => {

@@ -12,14 +12,15 @@ import Navbarp from "./components/Navbarp";
 import Navbart from "./components/Navbart";
 import Navbarg from "./components/Navbarg";
 import Footer from "./components/footer";
+import Sitemap from "./components/Sitemap";
+import Cart from "./components/Cart";
 
 import { CompareProvider } from '../src/components/CompareContext';  // Import Provider để quản lý trạng thái
-import ComparePage from '../src/pages/Compare';
+import ComparePage from './pages/Orther/Compare';
 
 
 //2.data
 //2.1.Gucci
-import Searchg from "./pages/Gucci/Searchg";
 import GucciEyeGlasses from "./data/Gucci/Eyeglasses/glasses.json";
 import GucciSunglasses from "./data/Gucci/Sunglasses/glasses.json";
 import GucciSaleProducts from "./data/Gucci/Saleglasses/glasses.json";
@@ -52,6 +53,8 @@ import Searchp from "./pages/Persol/Searchp";
 
 
 //4.Tomford
+import Searcht from "./pages/TomFord/Searcht";
+import Alltom from "./pages/TomFord/Alltom";
 import Tomford from "./pages/TomFord/Tomford";
 import Tomford_Detail from "./pages/TomFord/Tomford_Detail";
 import Tomford_Eyewear from "./pages/TomFord/Tomford_Eyewear";
@@ -63,6 +66,8 @@ import Tomford_Saleproduct_Detail from "./pages/TomFord/Tomford_Saleproduct_Deta
 
 
 //5.Rayban
+import Searchr from "./pages/Rayban/Searchr";
+import Allray from "./pages/Rayban/AllRay";
 import Rayban from './pages/Rayban/Rayban';
 import RaybanSunglassesHomePage from "./pages/Rayban/RaybanSunglasses";
 import RaybanSunglassesDetails from "./pages/Rayban/RaybanSunglassesDetails";
@@ -74,6 +79,7 @@ import RaybanSaleHomePage from "./pages/Rayban/RaybanSale";
 import RaybanSaleDetails from "./pages/Rayban/RaybanSaleDetails";
 
 //6.Gucci
+import Searchg from "./pages/Gucci/Searchg";
 import Gucci from './pages/Gucci/Gucci';
 import AllGucci from "./pages/Gucci/AllGucci";
 import GucciNewProductHomePage from "./pages/Gucci/GucciNewProduct";
@@ -88,9 +94,9 @@ import Guccimore from "./pages/Gucci/Guccimore";
 
 
 //7.Orther
-import Register from "./pages/Register";
-import Login from "./pages/Login";
-import Contact from "./pages/Contact";
+import Register from "./pages/Orther/Register";
+import Login from "./pages/Orther/Login";
+import Contact from "./pages/Orther/Contact";
 
 const App = () => {
   return (
@@ -105,24 +111,27 @@ const App = () => {
         <Route path="/Navbarp" element={< Navbarp />} />
         <Route path="/Navbart" element={< Navbart />} />
         <Route path="/Navbarg" element={< Navbarg />} />
+        <Route path="/sitemap" element={< Sitemap />} />
+        <Route path="/Cart" element={< Cart />} />
 
 
         {/*2.data
         2.1.Gucci */}
-        <Route path="/Searchg" element={<Searchg />} />
-        <Route path="/product/:id" element={<AllGucci />} />
+        <Route path="/productG/:id" element={<AllGucci />} />
         <Route path="/GucciSunglasses/:id" element={<GucciSunglassesDetail GucciSunglasses={GucciSunglasses} />} />
         <Route path="/GucciEyeGlasses/:id" element={<GucciEyeGlassesDetails GucciEyeGlassesDetails={GucciEyeGlasses} />} />
         <Route path="/GucciSaleProducts/:id" element={<GucciSaleProductsDetails GucciSaleProductDetails={GucciSaleProducts} />} />
         <Route path="/GucciNewProduct/:id" element={<GucciNewProductDetails GucciNewProductDetails={GucciNewProducts} />} />
 
         {/* 2.2.Rayban */}
+        <Route path="/Allray/:id" element={<Allray />} />
         <Route path='/RaybanNewProduct/:id' element={<RaybanNewProductsDetails RaybanNewProductsDetails={RaybanNewProducts} />} />
         <Route path="/RaybanSunglasses/:id" element={<RaybanSunglassesDetails RaybanSunglassesDetails={RaybanSunglasses} />} />
         <Route path='/RaybanSaleProduct/:id' element={<RaybanSaleDetails RaybanSaleDetails={RaybanSaleProducts} />} />
         <Route path='/RaybanEyeGlasses/:id' element={<RaybanEyeGlassesDetails RaybanEyeGlassesDetails={RaybanEyeGlasses} />} />
 
         {/* 2.3.Tomford */}
+        <Route path="/Alltom/:id" element={<Alltom />} />
         <Route path="/sunglassestomford/:id" element={<Tomford_Detail products={products} />} />
         <Route path="/eyeglassestomford/:id" element={<Tomford_Eyewear_Detail eyewearProducts={eyewearProducts} />} />
         <Route path="/newproductstomford/:id" element={<TomfordNewproductDetail newproducts={newproducts} />} />
@@ -141,6 +150,7 @@ const App = () => {
         <Route path="/sale/:id" element={<SaleDetail />} />
 
         {/* 4.Tomford */}
+        <Route path="/Searcht" element={<Searcht />} />
         <Route path="/Tomford" element={<Tomford />} />
         <Route path="/sunglassesTomford" element={<Tomford />} />
         <Route path="/eyeglassesTomford" element={<Tomford_Eyewear />} />
@@ -149,6 +159,7 @@ const App = () => {
 
 
         {/* 5.Rayban */}
+        <Route path="/Searchr" element={<Searchr />} />
         <Route path='/RaybanHomePage' element={<Rayban />} />
         <Route path='/RaybanNewProduct' element={<RaybanNewProductHomePage />} />
         <Route path='/RaybanSunglasses' element={<RaybanSunglassesHomePage />} />
@@ -156,6 +167,7 @@ const App = () => {
         <Route path='/RaybanSaleProduct' element={<RaybanSaleHomePage />} />
 
         {/* 6.Gucci */}
+        <Route path="/Searchg" element={<Searchg />} />
         <Route path='/GucciProducts' element={<Guccimore />} />
         <Route path='/GucciHomePage' element={<Gucci />} />
         <Route path='/GucciNewProduct' element={<GucciNewProductHomePage />} />
@@ -170,11 +182,10 @@ const App = () => {
 
 
       </Routes>
-      <CompareProvider>  {/* Cung cấp context cho toàn bộ ứng dụng */}
+      <CompareProvider>
         <Routes>
           <Route path="/compare" element={<ComparePage GucciSunglasses={GucciSunglasses} GucciEyeGlassesDetails={GucciEyeGlasses} GucciSaleProductDetails={GucciSaleProducts} GucciNewProductDetails={GucciNewProducts} RaybanNewProductsDetails={RaybanNewProducts} RaybanSunglassesDetails={RaybanSunglasses} RaybanSaleDetails={RaybanSaleProducts} RaybanEyeGlassesDetails={RaybanEyeGlasses} products={products} eyewearProducts={eyewearProducts} newproducts={newproducts} saleproduct={saleproduct} />} />  {/* Route cho trang so sánh */}
         </Routes>
-
       </CompareProvider>
       <Footer />
     </>

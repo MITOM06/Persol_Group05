@@ -37,7 +37,7 @@
   }
   
   /* Chi tiết sản phẩm */
-  .product-details {
+  .product-detailspp {
     margin-top: 1rem;
   }
   .detail-row {
@@ -152,4 +152,9 @@
   .variants-slider::-webkit-scrollbar {
     display: none;
   }
-  
+  .iconc {
+    font-size: 100px;
+    cursor: pointer;
+    color: rgb(9, 9, 14);
+    padding-left:30px;
+  }

@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import saleproduct from "../../data/Tomford/saleproduct.json";
-import "../../styles/Tomford/Tomford_Saleproduct.css"
+// import "../../styles/Tomford/Tomford_Saleproduct.css"
+import "../../styles/Tomford/tomford.css"
 import Logot from "../../components/Logot";
 import Navbart from '../../components/Navbart';
 const imageUrl = "/img2/sp.jpg";
 
 const TomfordSaleproduct = () => {
-  const [visibleProducts, setVisibleProducts] = useState(3);
+  const [visibleProducts, setVisibleProducts] = useState(4);
   const [allProductsShown, setAllProductsShown] = useState(false);
 
   const showMoreProducts = () => {
@@ -26,14 +27,14 @@ const TomfordSaleproduct = () => {
       <Navbart />
       <p></p>
       <div>
-        <img src={imageUrl} align="center" height="auto" width="2000" />
+        <img src={imageUrl}  className="background-image" />
       </div>
 
       <div className="row">
         <h1> SALE PRODUCT </h1>
 
         {saleproduct.slice(0, visibleProducts).map((product) => (
-          <div className="col col-4" key={product.id}>
+          <div className="col " key={product.id}>
             <div className="center">
               <Link to={`/saleproducttomford/${product.id}`}>
                 <div className="hover-img">

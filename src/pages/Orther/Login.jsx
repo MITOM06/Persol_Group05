@@ -1,10 +1,10 @@
 
 import React from "react";
 import { useEffect, useState } from "react";
-import '../styles/login.css'
+import '../../styles/Orther/login.css'
 import { Link, useNavigate } from 'react-router-dom'
-import Logop from "../components/Logop";
-import Navbarp from "../components/Navbarp";
+import Logop from "../../components/Logop";
+import Navbarp from "../../components/Navbarp";
 
 
 const LoginPage = () => {

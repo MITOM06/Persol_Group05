@@ -7,10 +7,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Logot from "../../components/Logot";
 import Navbart from '../../components/Navbart';
-
+import "../../styles/Tomford/tomford.css";
 
 // const TomfordEyewearDetail = ({ products = [], addToCart = () => {} }) => {
-    const TomfordEyewearDetail = ({ newproducts = [], addToCart = () => {} }) => {
+    const TomfordNewproductDetail = ({ newproducts = [], addToCart = () => {} }) => {
 
   const { id } = useParams();
   const [product, setProduct] = useState(null);
@@ -135,12 +135,20 @@ useEffect(() => {
       <button className='add-to-bag' onClick={handleAddToCart}>ADD TO BAG</button>
       <div className="details-section-2" onClick={toggleDetails} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '5px', borderBottom: '1px solid #ccc', padding: '5px', maxWidth: '150px' }}>
         <span className="details-section">DETAILS</span>
+        <p></p>
+        <p></p>
         <span>{isOpen ? '\u25B2' : '\u25BC'}</span>
       </div>
-      
+      <p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
       {isOpen && (
         <div className="product-details" style={{maxHeight: "500px",  overflowY: "auto", padding: '5px', borderTop: '1px solid #ccc', maxWidth: '1100px' }}>
-          <h1>Product Description:</h1>
+          <h4>Product Description:</h4>
           <p className="product-description">{formatDescription(product.description)}</p>
         </div>
       )}  
@@ -151,4 +159,4 @@ useEffect(() => {
   );
 };
 
-export default TomfordEyewearDetail;
+export default TomfordNewproductDetail;

@@ -14,24 +14,23 @@
   width: 360px;
   text-align: center;
   position: relative;
-  /* Ẩn ban đầu và thiết lập animation cho từng card */
+
   opacity: 0;
   animation: slideIn 0.8s forwards;
-  /* Nếu muốn delay theo thứ tự, có thể thêm: */
-  /* animation-delay: calc(0.1s * var(--i)); */
+
 }
 
-/* Cho các card lẻ chạy từ bên trái */
+
 .sale-card:nth-child(odd) {
   transform: translateX(-100%);
 }
 
-/* Cho các card chẵn chạy từ bên phải */
+
 .sale-card:nth-child(even) {
   transform: translateX(100%);
 }
 
-/* Keyframes định nghĩa hiệu ứng slide in */
+
 @keyframes slideIn {
   to {
     transform: translateX(0);
@@ -39,12 +38,12 @@
   }
 }
 
-/* Cho các card lẻ chạy từ bên trái */
+
 .sale-card:nth-child(odd) {
   transform: translateX(-100%);
 }
 
-/* Cho các card chẵn chạy từ bên phải */
+
 .sale-card:nth-child(even) {
   transform: translateX(100%);
 }
@@ -76,13 +75,14 @@
   /* phóng to nhẹ khi hover */
 }
 
-/* Keyframes định nghĩa hiệu ứng slide in */
+
 @keyframes slideIn {
   to {
     transform: translateX(0);
     opacity: 1;
   }
 }
+
 .pricesale {
   text-decoration: line-through;
   color: gray;
@@ -94,3 +94,54 @@
   color: red;
 }
 
+.media-container {
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+
+.image-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.image-side img {
+  width: 120%;
+  height: auto;
+  object-fit: cover;
+}
+
+.video-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.video-side video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#imgsale {
+  text-align: center; 
+  margin: 20px auto;  
+}
+
+#imgsale img {
+  width: 100%;      
+  max-width: 1500px;
+  height: auto;      
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  #imgsale img {
+    max-width: 200px;
+  }
+}

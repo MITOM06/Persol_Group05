@@ -1,8 +1,8 @@
-import '../styles/register.css'
+import '../../styles/Orther/register.css'
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Logop from "../components/Logop";
-import Navbarp from "../components/Navbarp";
+import Logop from "../../components/Logop";
+import Navbarp from "../../components/Navbarp";
 
 const RegisterPage = () => {
     const [notification, setNotification] = useState("");

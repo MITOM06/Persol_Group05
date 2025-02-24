@@ -1,5 +1,3 @@
-
-
 import React, { useState, useEffect } from "react";
 import "../../styles/Persol/Home.css";
 import img1 from "../../imgs/imgh/PO_W5-6_Blocco1_D.avif";
@@ -102,6 +100,20 @@ const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [BShome, setBShome] = useState([]);
   const [NAhome, setNAhome] = useState([]);
+  
+  const [visitCount, setVisitCount] = useState(1);
+
+  useEffect(() => {
+    const count = parseInt(localStorage.getItem("visitCount")) || 0;
+    const newCount = count + 1;
+    localStorage.setItem("visitCount", newCount);
+    setVisitCount(newCount);
+  }, []);
+
+  const resetCounter = () => {
+    localStorage.setItem("visitCount", 1);
+    setVisitCount(1);
+  };
 
   useEffect(() => {
     const BS = homeData.filter((item) => item.gender === "BS");
@@ -114,7 +126,7 @@ const Home = () => {
     home.map((item) => (
       <div key={item.id} className="home-card">
         <Link to={`/HomeDetail/${item.id}`}
-        onClick={() => window.scrollTo(0, 0)}  // Cuộn lên đầu trang khi nhấn vào sản phẩm
+          onClick={() => window.scrollTo(0, 0)}  // Cuộn lên đầu trang khi nhấn vào sản phẩm
         >
           <img src={homeImages[item.image1]} alt={item.name} className="home-image" />
         </Link>
@@ -139,12 +151,22 @@ const Home = () => {
     return () => clearInterval(interval);
   }, []);
 
+
   return (
     <>
+
+      <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", padding: "10px", position: "relative" }}>
+        <div style={{ display: "flex", alignItems: "center", background: "#f8f9fa", padding: "8px 16px", borderRadius: "8px", boxShadow: "0px 2px 4px rgba(0,0,0,0.1)" }}>
+          <h2 style={{ margin: "0 10px 0 0", fontSize: "16px", fontWeight: "bold", color: "#333" }}>Visitors: {visitCount}</h2>
+          <button onClick={resetCounter} style={{ background: "#000", color: "#fff", border: "none", padding: "6px 12px", borderRadius: "4px", cursor: "pointer", fontSize: "14px" }}>Reset</button>
+        </div>
+      </div>
+
       <Logop />
       <p></p>
       <Navbarp />
       <p></p>
+
       {/* SLIDER */}
       <div className="slider-container">
         {slides.map((slide, index) => (
@@ -182,6 +204,6 @@ const Home = () => {
   );
 };
 
+
+
 export default Home;
-
-

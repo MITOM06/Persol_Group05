@@ -35,7 +35,18 @@
   font-size: 14px;
   color: #333;
   text-decoration: none;
+}
 
+.footer-section a {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  color: black; /* Đổi màu chữ thành đen */
+}
+
+.footer-section :hover a {
+  color: rgb(255, 5, 5); /* Màu chữ khi hover vào sản phẩm */
 }
 
 .footer-bottom {

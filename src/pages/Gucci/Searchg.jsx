@@ -56,7 +56,7 @@ const SearchPage = () => {
           filteredProducts.map((product, index) => (
             <Link
               key={index}
-              to={`/product/${product.id}`}
+              to={`/productG/${product.id}`}
               className="product-link"
             >
               <div className="product-card">

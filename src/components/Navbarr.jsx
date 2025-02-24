@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaSearch, FaUser, FaShoppingCart } from "react-icons/fa";
-import "../styles/Navbar.css";
+import "../styles/Orther/Navbar.css";
 
 const Navbar = () => {
   return (
@@ -14,7 +14,8 @@ const Navbar = () => {
         <li><Link to="/RaybanSaleProduct">SALE</Link></li>
       </ul>
       <div className="navbar-icons">
-        <FaSearch className="icon" />
+
+        ' <Link to="/Searchr">   <FaSearch className="icon" /></Link>
         <Link to="/login"> <FaUser className="icon" /></Link>
         <FaShoppingCart className="icon" />
       </div>

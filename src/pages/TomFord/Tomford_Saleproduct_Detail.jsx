@@ -136,8 +136,10 @@ const TomfordSaleDetail = ({ saleproduct = [], addToCart = () => { } }) => {
       {product.images && product.images.length > 0 ? (
         <Slider {...sliderSettings}>
           {product.images.map((image, index) => (
+            
             <div key={index} className="inner-slide">
-              <img src={image} alt={`${product.name} view ${index + 1}`} className="tf2" />
+              <img src={image} style={{ width:"500", height:"400" }} alt={`${product.name} view ${index + 1}`} className="tf2" />
+
             </div>
           ))}
         </Slider>
@@ -148,11 +150,11 @@ const TomfordSaleDetail = ({ saleproduct = [], addToCart = () => { } }) => {
       <h1>
         <div className="tf4">
           {product.oldPrice && (
-            <span style={{ textDecoration: "line-through", color: "gray", marginRight: "10px", fontSize: "30px" }}>
+            <span style={{ textDecoration: "line-through", color: "gray", marginRight: "10px", fontSize: "20px" }}>
               ${product.oldPrice}
             </span>
           )}
-          <span style={{ fontWeight: "bold", color: "red", fontSize: "40px" }}>
+          <span style={{ fontWeight: "bold", color: "red", fontSize: "25px" }}>
             ${product.newPrice}
           </span>
         </div>
@@ -173,7 +175,7 @@ const TomfordSaleDetail = ({ saleproduct = [], addToCart = () => { } }) => {
 
       {isOpen && (
         <div className="product-details" style={{ maxHeight: "500px", overflowY: "auto", padding: '5px', borderTop: '1px solid #ccc', maxWidth: '1100px' }}>
-          <h1>Product Description:</h1>
+          <h4>Product Description:</h4>
           <p className="product-description">{formatDescription(product.description)}</p>
         </div>
       )}
@@ -181,12 +183,15 @@ const TomfordSaleDetail = ({ saleproduct = [], addToCart = () => { } }) => {
 
 
       <div className="row">
-        <h1>YOU MAY ALSO LIKE</h1>
+      <p></p>
 
-        <Swiper
+
+
+
+         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
-          spaceBetween={40}
-          slidesPerView={3}
+          spaceBetween={400}
+          slidesPerView={2.7}
           navigation
           pagination={{ clickable: true }}
           // autoplay={{ delay: 3000 }}
@@ -203,8 +208,9 @@ const TomfordSaleDetail = ({ saleproduct = [], addToCart = () => { } }) => {
                     {product.image ? (
                       <img
                         src={product.image}
-                        width="500"
-                        height="400"
+                        width="400"
+                        height="300"
+                      
                         alt={product.name}
                         onError={(e) => (e.target.src = "/images/default-image.jpg")}
                       />
@@ -217,7 +223,7 @@ const TomfordSaleDetail = ({ saleproduct = [], addToCart = () => { } }) => {
               </div>
             </SwiperSlide>
           ))}
-        </Swiper>
+        </Swiper> 
       </div>
 
 

@@ -1,44 +1,49 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from "react"; 
+import { useParams, Link } from "react-router-dom";
 import { saveAs } from "file-saver";
 import { Document, Packer, Paragraph, TextRun, ImageRun } from "docx";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Logot from "../../components/Logot";
-import Navbart from '../../components/Navbart';
-
+import Navbart from "../../components/Navbart";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "../../styles/Tomford/tomford.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import saleproduct from "../../data/Tomford/saleproduct.json"
-import { Link } from "react-router-dom";
+import "../../styles/Tomford/Alltom.css"
 
-const TomfordEyewearDetail = ({ eyewearProducts = [], addToCart = () => { } }) => {
+// Import dữ liệu từ 4 file JSON
+import newproducts from "../../data/Tomford/newproducts.json";
+import saleproduct from "../../data/Tomford/saleproduct.json";
+import glasses from "../../data/Tomford/glasses.json";
+import eyewearProducts from "../../data/Tomford/glasses_eyewear.json";
 
+const Alltom= ({ addToCart = () => {} }) => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const [quantity, setQuantity] = useState(1);
   const [notification, setNotification] = useState("");
 
+  // Gộp tất cả sản phẩm từ 4 file JSON
+  const allProducts = [...newproducts, ...saleproduct, ...glasses, ...eyewearProducts];
 
   useEffect(() => {
-    if (Array.isArray(eyewearProducts)) {
-      const foundProduct = eyewearProducts.find(
-        (p) => p.id === parseInt(id) && p.owner === 'tomford'
-      );
-
-      setProduct(foundProduct);
+    // Tìm sản phẩm có id khớp (so sánh dạng chuỗi để đảm bảo)
+    const foundProduct = allProducts.find((p) => String(p.id) === id);
+    // Nếu sản phẩm không có mảng images nhưng có thuộc tính image, bọc nó vào mảng
+    if (foundProduct) {
+      if (!foundProduct.images && foundProduct.image) {
+        foundProduct.images = [foundProduct.image];
+      }
     }
-  }, [id, eyewearProducts]);
-
+    setProduct(foundProduct);
+  }, [id, allProducts]);
 
   if (!product) {
-    return <div>No any product.</div>;
+    return <div>No product found.</div>;
   }
 
   const toggleDetails = () => {
@@ -115,11 +120,14 @@ const TomfordEyewearDetail = ({ eyewearProducts = [], addToCart = () => { } }) =
     autoplaySpeed: 3000,
   };
 
+  // Lấy một số sản phẩm khuyến nghị (loại bỏ sản phẩm hiện tại)
+  const recommendedProducts = allProducts.filter(p => String(p.id) !== id).slice(0, 4);
+
   return (
     <>
-      <Logot/>
+      <Logot />
       <p></p>
-      <Navbart/>
+      <Navbart />
       <p></p>
       <div className="product-container">
         {notification && <div className="notification">{notification}</div>}
@@ -142,65 +150,57 @@ const TomfordEyewearDetail = ({ eyewearProducts = [], addToCart = () => { } }) =
           <span className="count-3">{quantity}</span>
           <button className="count-1" onClick={() => setQuantity(quantity + 1)}>+</button>
         </div>
-        <p></p>
-        <button className='add-to-bag' onClick={handleAddToCart}>ADD TO BAG</button>
+        <button className="add-to-bag" onClick={handleAddToCart}>ADD TO BAG</button>
         <div className="details-section-2" onClick={toggleDetails} style={{ cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '5px', borderBottom: '1px solid #ccc', padding: '5px', maxWidth: '150px' }}>
           <span className="details-section">DETAILS</span>
-          <p></p>
           <span>{isOpen ? '\u25B2' : '\u25BC'}</span>
         </div>
 
-  
-
         {isOpen && (
           <div className="product-detailstomford" style={{ maxHeight: "500px", overflowY: "auto", padding: '5px', borderTop: '1px solid #ccc', maxWidth: '1100px' }}>
-            <h4>Product Description:</h4>
+            <h1>Product Description:</h1>
             <p className="product-description">{formatDescription(product.description)}</p>
           </div>
         )}
         <button className="download-doc" onClick={downloadProductDoc} style={{ marginTop: '10px', padding: '5px 10px', cursor: 'pointer' }}>DOWNLOAD</button>
 
-
-    
-
-           <Swiper
+        <div className="row">
+          <h1>YOU MAY ALSO LIKE</h1>
+          <Swiper
             modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={400}
-            slidesPerView={2.7}
+            spaceBetween={40}
+            slidesPerView={4}
             navigation
             pagination={{ clickable: true }}
-            // autoplay={{ delay: 3000 }}
             style={{
               "--swiper-navigation-color": "black",
               "--swiper-navigation-size": "50px"
             }}
           >
-            {saleproduct.map((product) => (
-              <SwiperSlide key={product.id}>
+            {recommendedProducts.map((recProduct) => (
+              <SwiperSlide key={recProduct.id}>
                 <div className="center">
-                  <Link to={`/saleproducttomford/${product.id}`}>
+                  <Link to={`/allglassesdetail/${recProduct.id}`}>
                     <div className="hover-img">
-                      {product.image ? (
+                      {recProduct.image ? (
                         <img
-                          src={product.image}
-                          width="400"
-                          height="300"
-                          alt={product.name}
+                          src={process.env.PUBLIC_URL + recProduct.image}
+                          width="500"
+                          height="400"
+                          alt={recProduct.name}
                           onError={(e) => (e.target.src = "/images/default-image.jpg")}
                         />
                       ) : (
                         <p>Image not available</p>
                       )}
-                      <h1 className="non-link">{product.name}</h1>
+                      <h1 className="non-link">{recProduct.name}</h1>
                     </div>
                   </Link>
                 </div>
               </SwiperSlide>
             ))}
-          </Swiper> 
-        
-
-
+          </Swiper>
+        </div>
 
         <footer />
       </div>
@@ -208,4 +208,4 @@ const TomfordEyewearDetail = ({ eyewearProducts = [], addToCart = () => { } }) =
   );
 };
 
-export default TomfordEyewearDetail;
+export default Alltom;

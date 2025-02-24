@@ -1,42 +1,42 @@
-.search-results {
+.search-resultsp {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 50px;
     justify-items: center;
   }
   
-  .product-card {
+  .product-cardp {
     width: 110%;
     text-align: center;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid #eee;
+    border: 1px solid #bebdbd;
   }
   
-  .product-card a {
+  .product-cardp a {
     text-decoration: none;
     color: inherit;
   }
   
-  .product-card .product-image {
-    width: 90%;
+  .product-cardp .product-imagep {
+    width: 110%;
     height: auto;
     margin-bottom: 15px;
     transition: opacity 0.3s ease;
   }
   
-  .product-card .product-image:hover {
-    opacity: 0.8;
+  .product-cardp .product-imagep:hover {
+    opacity: 0.7;
   }
   
-  .product-card h3 {
+  .product-cardp h3 {
     font-size: 1.2rem;
     margin: 10px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
   }
   
-  .product-card p {
+  .product-cardp p {
     font-size: 1rem;
     color: #555;
     margin: 0;

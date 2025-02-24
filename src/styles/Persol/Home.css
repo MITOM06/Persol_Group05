@@ -51,24 +51,45 @@
 
 
 
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1520 / 706;
+
+  border-radius: 10px;
+  box-shadow: 10px 6px 10px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+
 .slide {
   display: flex;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
-  left: 100px;
+  left: 0;
+  transform: translateX(100%); 
   opacity: 0;
-  transition: all 4s ease-in-out; 
+  transition: transform 1.8s ease-in-out, opacity 1.8s ease-in-out;
 }
 
+
 .slide.active {
-  left: 0;
+  transform: translateX(0);
   opacity: 1;
 }
 
 
-/* Navigation buttons */
+@media (min-width: 768px) {
+  .slider-container {
+    margin: 0 auto; 
+  }
+}
+
+
+
 .nav-button {
   position: absolute;
   top: 50%;
@@ -91,7 +112,7 @@
   right: 1px;
 }
 
-/* Fading animation */
+
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -123,24 +144,22 @@
   width: 360px;
   text-align: center;
   position: relative;
-  /* Ẩn ban đầu và thiết lập animation cho từng card */
+
   opacity: 0;
   animation: slideIn 0.8s forwards;
-  /* Nếu muốn delay theo thứ tự, có thể thêm: */
-  /* animation-delay: calc(0.1s * var(--i)); */
+ 
 }
 
-/* Cho các card lẻ chạy từ bên trái */
+
 .home-card:nth-child(odd) {
   transform: translateX(-100%);
 }
 
-/* Cho các card chẵn chạy từ bên phải */
+
 .home-card:nth-child(even) {
   transform: translateX(100%);
 }
 
-/* Keyframes định nghĩa hiệu ứng slide in */
 @keyframes slideIn {
   to {
     transform: translateX(0);
@@ -148,12 +167,12 @@
   }
 }
 
-/* Cho các card lẻ chạy từ bên trái */
+
 .home-card:nth-child(odd) {
   transform: translateX(-100%);
 }
 
-/* Cho các card chẵn chạy từ bên phải */
+
 .home-card:nth-child(even) {
   transform: translateX(100%);
 }
@@ -182,10 +201,10 @@
 
 .home-image:hover {
   transform: scale(1.05);
-  /* phóng to nhẹ khi hover */
+  
 }
 
-/* Keyframes định nghĩa hiệu ứng slide in */
+
 @keyframes slideIn {
   to {
     transform: translateX(0);

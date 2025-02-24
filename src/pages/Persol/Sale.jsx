@@ -4,6 +4,7 @@ import SaleData from "../../data/Persol/sale.json";
 import "../../styles/Persol/Sale.css";
 import Navbarp from "../../components/Navbarp";
 import Logop from "../../components/Logop";
+import img from "../../imgs/imgsale/PO-Senna_LP_Blocco5_D.avif"
 
 const saleImages = {
   "0PO3305S__1052S3__P21__shad__fr.avif": require("../../imgs/imgsale/0PO3305S__1052S3__P21__shad__fr.avif"),
@@ -20,7 +21,6 @@ const saleImages = {
 const Sale = () => {
   const [mensSale, setMensSale] = useState([]);
 
-
   useEffect(() => {
     setMensSale(SaleData.filter((item) => item.gender === "male"));
   }, []);
@@ -28,8 +28,9 @@ const Sale = () => {
   const renderSale = (sale) =>
     sale.map((item) => (
       <div key={item.id} className="sale-card">
-        <Link to={`/sale/${item.id}`}
-        onClick={() => window.scrollTo(0, 0)}  // Cuộn lên đầu trang khi nhấn vào sản phẩm
+        <Link
+          to={`/sale/${item.id}`}
+          onClick={() => window.scrollTo(0, 0)} // Cuộn lên đầu trang khi nhấn vào sản phẩm
         >
           <img
             src={saleImages[item.image1]}
@@ -47,8 +48,6 @@ const Sale = () => {
         ) : (
           <span className="new-price">{item.price}</span>
         )}
-
-
       </div>
     ));
 
@@ -58,9 +57,23 @@ const Sale = () => {
       <p></p>
       <Navbarp />
       <p></p>
-      
+      <div className="media-container">
+        <div className="video-side">
+          <video width="100%" height="auto" autoPlay muted loop>
+            <source src="/raybanimg/homepage/PO-Senna_LP_Blocco1_video_D_2.webm" type="video/webm" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+        <div className="image-side">
+          <img src="/raybanimg/homepage/PO-Senna_LP_Blocco2_2_D.avif" alt="Sale Banner" />
+        </div>
+      </div>
+
       <h4 id="title">Sale</h4>
       <div className="sale-container">{renderSale(mensSale)}</div>
+      <p></p>
+      <div id="imgsale"><img src={img}/></div>
     </>
   );
 };

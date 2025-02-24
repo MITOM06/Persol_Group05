@@ -1,0 +1,48 @@
+.allglasses-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .allglasses-page h2 {
+    margin-bottom: 20px;
+  }
+  
+  .productsr-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .productr-link {
+    text-decoration: none; /* Loại bỏ gạch chân của liên kết */
+    color: inherit; /* Kế thừa màu từ phần tử con */
+  }
+  
+  .productr-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    transition: box-shadow 0.3s;
+  }
+  
+  .productr-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .productr-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .productr-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .productr-card:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
