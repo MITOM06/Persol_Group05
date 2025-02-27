@@ -1,0 +1,85 @@
+#title {
+  text-align: left;
+}
+
+.eyeglasses-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.eyeglasses-card {
+  width: 360px;
+  text-align: center;
+  position: relative;
+  /* Ẩn ban đầu và thiết lập animation cho từng card */
+  opacity: 0;
+  animation: slideIn 0.8s forwards;
+  /* Nếu muốn delay theo thứ tự, có thể thêm: */
+  /* animation-delay: calc(0.1s * var(--i)); */
+}
+
+/* Cho các card lẻ chạy từ bên trái */
+.eyeglasses-card:nth-child(odd) {
+  transform: translateX(-100%);
+}
+
+/* Cho các card chẵn chạy từ bên phải */
+.eyeglasses-card:nth-child(even) {
+  transform: translateX(100%);
+}
+
+/* Keyframes định nghĩa hiệu ứng slide in */
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Cho các card lẻ chạy từ bên trái */
+.eyeglasses-card:nth-child(odd) {
+  transform: translateX(-100%);
+}
+
+/* Cho các card chẵn chạy từ bên phải */
+.eyeglasses-card:nth-child(even) {
+  transform: translateX(100%);
+}
+
+
+.eyeglasses-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.color-text {
+  color: gray;
+  font-size: 14px;
+}
+
+.favourite-label {
+  position: absolute;
+  top: 1px;
+  left: 30px;
+  color: rgb(0, 0, 0);
+  padding: 3px 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.eyeglasses-image:hover {
+  transform: scale(1.05);
+  /* phóng to nhẹ khi hover */
+}
+
+/* Keyframes định nghĩa hiệu ứng slide in */
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,48 @@
+h2 {
+    text-align: center;
+}
+
+.sitemap-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* Chia cột linh hoạt */
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+
+.sitemap-container div {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sitemap-container h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.sitemap-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sitemap-container ul li {
+    margin-bottom: 8px;
+}
+
+.sitemap-container ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.sitemap-container ul li a:hover {
+    color: #000;
+    text-decoration: underline;
+}

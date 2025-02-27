@@ -1,0 +1,99 @@
+[
+    {
+      "id": 1,
+      "name": "SQUARE FRAME SUNGLASSES",
+      "image": "/gucciimg/newproducts/n1.png",
+      "image1": "/gucciimg/sale/carousel/s1/c1.avif",
+      "image2": "/gucciimg/sale/carousel/s1/c2.avif",
+      "image3": "/gucciimg/sale/carousel/s1/c3.avif",
+      "description": "These round sunglasses from Gucci feature a bold black acetate frame, offering a timeless look and full UV protection.",
+      "price": "$ 435",
+      "model": "Style 819535 J0740 2750",
+      "star": "5",
+      "oldprice": "$ 999"
+    },
+    {
+      "id": 2,
+      "name": "SQUARE FRAME SUNGLASSES",
+      "image": "/gucciimg/newproducts/n2.png",
+      "image1": "/gucciimg/sale/carousel/s1/c1.avif",
+      "image2": "/gucciimg/sale/carousel/s1/c2.avif",
+      "image3": "/gucciimg/sale/carousel/s1/c3.avif",
+      "description": "These round sunglasses from Gucci feature a bold black acetate frame, offering a timeless look and full UV protection.",
+      "oldprice": "$ 999",
+      "price": "$ 435",
+      "star": 5.0
+    },
+    {
+      "id": 3,
+      "name": "SQUARE FRAME SUNGLASSES",
+      "image": "/gucciimg/newproducts/n3.png",
+      "image1": "/gucciimg/sale/carousel/s1/c1.avif",
+      "image2": "/gucciimg/sale/carousel/s1/c2.avif",
+      "image3": "/gucciimg/sale/carousel/s1/c3.avif",
+      "description": "These round sunglasses from Gucci feature a bold black acetate frame, offering a timeless look and full UV protection.",
+      "oldprice": "$ 999",
+      "price": "$ 435",
+      "star": 5.0
+    },
+    {
+      "id": 4,
+      "name": "CAT-EYE FRAME SUNGLASSES",
+      "image": "/gucciimg/newproducts/n4.png",
+      "image1": "/gucciimg/sale/carousel/s1/c1.avif",
+      "image2": "/gucciimg/sale/carousel/s1/c2.avif",
+      "image3": "/gucciimg/sale/carousel/s1/c3.avif",
+      "description": "These round sunglasses from Gucci feature a bold black acetate frame, offering a timeless look and full UV protection.",
+      "oldprice": "$ 999",
+      "price": "$ 435",
+      "star": 5.0
+    },
+    {
+      "id": 5,
+      "name": "CAT-EYE FRAME SUNGLASSES",
+      "image": "/gucciimg/newproducts/n5.png",
+      "image1": "/gucciimg/sale/carousel/s1/c1.avif",
+      "image2": "/gucciimg/sale/carousel/s1/c2.avif",
+      "image3": "/gucciimg/sale/carousel/s1/c3.avif",
+      "description": "These round sunglasses from Gucci feature a bold black acetate frame, offering a timeless look and full UV protection.",
+      "oldprice": "$ 999",
+      "price": "$ 435",
+      "star": 5.0
+    },
+    {
+      "id": 6,
+      "name": "CAT-EYE FRAME SUNGLASSES",
+      "image": "/gucciimg/newproducts/n6.png",
+      "image1": "/gucciimg/sale/carousel/s1/c1.avif",
+      "image2": "/gucciimg/sale/carousel/s1/c2.avif",
+      "image3": "/gucciimg/sale/carousel/s1/c3.avif",
+      "description": "These round sunglasses from Gucci feature a bold black acetate frame, offering a timeless look and full UV protection.",
+      "oldprice": "$ 999",
+      "price": "$ 435",
+      "star": 5.0
+    },
+    {
+      "id": 7,
+      "name": "SQUARE FRAME SUNGLASSES",
+      "image": "/gucciimg/newproducts/n7.png",
+      "image1": "/gucciimg/sale/carousel/s1/c1.avif",
+      "image2": "/gucciimg/sale/carousel/s1/c2.avif",
+      "image3": "/gucciimg/sale/carousel/s1/c3.avif",
+      "description": "These round sunglasses from Gucci feature a bold black acetate frame, offering a timeless look and full UV protection.",
+      "oldprice": "$ 999",
+      "price": "$ 435",
+      "star": 5.0
+    },
+    {
+      "id": 8,
+      "name": "CAT-EYE FRAME SUNGLASSES",
+      "image": "/gucciimg/newproducts/n8.png",
+      "image1": "/gucciimg/sale/carousel/s1/c1.avif",
+      "image2": "/gucciimg/sale/carousel/s1/c2.avif",
+      "image3": "/gucciimg/sale/carousel/s1/c3.avif",
+      "description": "These round sunglasses from Gucci feature a bold black acetate frame, offering a timeless look and full UV protection.",
+      "oldprice": "$ 999",
+      "price": "$ 435",
+      "star": 5.0
+    }
+  ]

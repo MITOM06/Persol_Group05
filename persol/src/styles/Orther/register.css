@@ -1,0 +1,240 @@
+ .box {
+   height: 1000px;
+   position: relative;
+   width: 200px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .text-join-the {
+   color: #b1e0ee;
+   font-family: "Poppins-Bold", Helvetica;
+   font-size: 70px;
+   font-weight: 700;
+   right: 300px;
+   letter-spacing: 0;
+   line-height: normal;
+   position: absolute;
+   top: 200px;
+   width: 800px;
+ }
+
+
+ .member {
+   color: #bc3a80;
+   font-family: "Poppins-Bold", Helvetica;
+   font-size: 60px;
+   font-weight: 700;
+   right: 620px;
+   letter-spacing: 0;
+   line-height: normal;
+   position: absolute;
+   bottom: 280px;
+ }
+
+
+ .box .overlap-group-x {
+   background-color: #e5f0f3;
+   border-radius: 20px;
+   height: 600px;
+   position: absolute;
+   top: 180px;
+   width: 550px;
+   left: 600px;
+   color: black
+ }
+
+ .text-name {
+   color: black;
+   font-family: "Poppins-Medium", Helvetica;
+   font-size: 20px;
+   font-weight: 500;
+   left: 40px;
+   letter-spacing: 0;
+   line-height: normal;
+   position: absolute;
+   top: 10px;
+   width: 341px;
+ }
+
+ .fill-name {
+   background-color: white;
+   color: black;
+   font-size: 20px;
+   border: 2px solid;
+   border-color: #4aa6fa;
+   border-radius: 10px;
+   height: 60px;
+   width: 500px;
+   left: 20px;
+   position: absolute;
+   top: 40px;
+
+ }
+
+
+
+ .text-pass {
+   color: black;
+   font-family: "Poppins-Medium", Helvetica;
+   font-size: 20px;
+   font-weight: 500;
+   left: 30px;
+   letter-spacing: 0;
+   line-height: normal;
+   position: absolute;
+   top: 120px;
+   width: 341px;
+ }
+
+
+ .fill-pass {
+   background-color: white;
+   color: black;
+   font-size: 20px;
+   border: 2px solid;
+   border-color: #4aa6fa;
+   border-radius: 10px;
+   height: 60px;
+   width: 500px;
+   left: 20px;
+   position: absolute;
+   top: 150px;
+
+ }
+
+ .text-confirm-password {
+   color: black;
+   font-family: "Poppins-Medium", Helvetica;
+   font-size: 20px;
+   font-weight: 500;
+   left: 30px;
+   letter-spacing: 0;
+   line-height: normal;
+   position: absolute;
+   top: 220px;
+   width: 450px;
+ }
+
+
+ .fill-confirmpass {
+   background-color: white;
+   color: black;
+   font-size: 20px;
+   border: 2px solid;
+   border-color: #4aa6fa;
+   border-radius: 10px;
+   height: 60px;
+   left: 20px;
+   position: absolute;
+   top: 250px;
+   width: 500px;
+
+ }
+
+
+
+ .text-email {
+   color: black;
+   font-family: "Poppins-Medium", Helvetica;
+   font-size: 20px;
+   font-weight: 500;
+   left: 40px;
+   letter-spacing: 0;
+   line-height: normal;
+   position: absolute;
+   top: 320px;
+   width: 341px;
+ }
+
+
+ .fill-email {
+   background-color: white;
+   color: black;
+   font-size: 20px;
+   border: 2px solid;
+   border-color: #4aa6fa;
+   border-radius: 10px;
+   height: 60px;
+   width: 500px;
+   left: 20px;
+   position: absolute;
+   top: 350px;
+
+
+ }
+
+ .text-address1 {
+   color: black;
+   font-family: "Poppins-Medium", Helvetica;
+   font-size: 20px;
+   font-weight: 500;
+   left: 30px;
+   letter-spacing: 0;
+   line-height: normal;
+   position: absolute;
+   top: 100px;
+   width: 341px;
+ }
+
+ .fill-address {
+   background-color: white;
+   color: black;
+   font-size: 20px;
+   border: 2px solid;
+   border-color: #4aa6fa;
+   border-radius: 10px;
+   height: 60px;
+   left: 20px;
+   position: absolute;
+   top: 1500px;
+   width: 1500px;
+ }
+
+ .register {
+   background-color: #4aa6fa;
+   ;
+   color: white;
+   font-family: "Poppins-Regular", Helvetica;
+   border-radius: 10px;
+   box-sizing: border-box;
+   font-size: 30px;
+   font-weight: 400;
+   height: 60px;
+   left: 20px;
+   letter-spacing: 0;
+   top: 500px;
+   line-height: normal;
+   position: absolute;
+   text-align: center;
+   width: 500px;
+ }
+
+ .text-wrapper-4:hover {
+   transform: scale(1.1)
+ }
+
+ .notification-1 {
+   left: 850px;
+   position: absolute;
+   top: 820px;
+   transform: translateX(-50%);
+   align-items: center;
+   color: red;
+   font-size: 20px;
+   font-weight: 20px;
+   transition: opacity 1s ease-in-out;
+   opacity: 1;
+   z-index: 1000;
+ }
+
+ .register:hover {
+   background-color: #bc3a80;
+   transform: scale(1.05);
+ }
+
+ .register:active {
+   transform: scale(0.95);
+ }

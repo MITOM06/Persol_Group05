@@ -1,0 +1,232 @@
+/* 
+.center{
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+    width: 500px;
+ }
+ 
+    a{
+       text-decoration: none;
+       position: relative;
+     font-size: 24px;
+     color: #000000;
+     font-family: "Inter-Regular", Helvetica;
+     font: bold;
+     font-weight: 300px;
+     Line-height: normal;
+    
+    }
+ 
+
+ 
+  .tf2{
+    background-color: #202027;
+    border-radius: 20px;
+    color:white;
+    height: 800px;
+    left: 10px;
+    position: relative;
+    top:10px;
+    width: 1200px;
+  }
+ 
+  .tf3{
+    color:black;
+    border-radius: 20px;
+    left: 1400px;
+    position: relative;
+    top: -650px;
+    width: 1200px;
+  
+  }
+ 
+  .tf4{
+   color:black;
+   border-radius: 20px;
+   left: 1400px;
+   position: relative;
+   top: -640px;
+   width: 1200px;
+  
+  }
+ 
+  .tf5{
+    color:black;
+    left: 1500px;
+    position: relative;
+    top: 620px;
+  
+  }
+  
+ 
+  .hover-img{
+    overflow:hidden;
+    width: 620px;
+    transition: transform 0.3s ease-in-out;
+ position: relative
+  }
+ 
+  .hover-img:hover{
+    transform: scale(0.9);
+    position: relative
+  }
+ .count-1{
+    color:black;
+    left: 1450px;
+    position: relative;
+    top: -600px;
+    font-size: 30px;
+  }
+ 
+  .count-2{
+    color:black;
+    left: 1400px;
+    position: relative;
+    top: -600px;
+    font-size: 30px;
+  }
+ 
+  .count-3{
+    color:black;
+    left: 1420px;
+    position: relative;
+    top: -600px;
+    font-size: 30px;
+  } 
+ 
+  .add-to-bag{
+    left: 1400px;
+    position: relative;
+    top: -500px;
+    background-color: black;
+     color: #ffffff;
+     font-family: "Inter-Regular", Helvetica;
+     border-radius: 10px;
+     box-sizing: border-box;
+     font-size: 35px;
+     width: 622px;
+  }
+ 
+  .hover-add-to-bag:hover{
+    transform: scale(0.9)
+  }
+ 
+ .details-section{
+    left: 0px;
+    position: relative;
+    top: 0px;
+     color: black;
+     font-family: "Inter-Regular", Helvetica;
+     border-radius: 10px;
+     box-sizing: border-box;
+     font-size: 30px;
+     width: 622px;
+ }
+ 
+ .details-section-2{
+    left: 1400px;
+    position: relative;
+    top: -380px;
+     color: black;
+     font-family: "Inter-Regular", Helvetica;
+     border-radius: 10px;
+     box-sizing: border-box;
+     font-size: 30px;
+     width: 622px;
+ }
+ 
+ .product-detailstomford{
+    left: 1400px;
+    position:relative ;
+    top: -360px;
+    color: black;
+    font-family: "Inter-Regular", Helvetica;
+   font-size: 24px;
+    
+   overflow: hidden;
+   transition: max-height 0.3s ease-out;
+    max-Height: 100px
+ }
+ 
+ .product-detailstomford.open {
+   
+   overflow-y: auto; 
+   padding: 10px;
+ }
+ 
+ .download-doc{
+    left: 1400px;
+    position: absolute;
+    top:560px;
+    background-color: black;
+     color: #ffffff;
+     font-family: "Inter-Regular", Helvetica;
+     border-radius: 10px;
+     box-sizing: border-box;
+     font-size: 35px;
+     width: 622px;
+ }
+ 
+ 
+ .product-description{
+    font-family: "Inter-Regular", Helvetica;
+    font-size: 25px;
+ }
+ 
+ .product-container {
+    position: relative;
+    width: 100%;
+  
+  }
+ 
+  .notification {
+   left: 1550px;
+    position:absolute;
+ top: 400px;
+   transform: translateX(-50%);
+   background-color: #3cdd3c; 
+   color: black;
+   padding: 15px 25px; 
+   border-radius: 8px;
+   font-size: 20px; 
+   font-weight: bold;
+   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+   transition: opacity 0.5s ease-in-out;
+   opacity: 1;
+   z-index: 1000;
+ }  
+
+
+
+
+ 
+ .product-image {
+  width: 100%; 
+  height: auto; 
+  max-width: 500px; 
+  object-fit: cover;
+  border-radius: 10px; 
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .product-image {
+    max-width: 300px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .product-image {
+    max-width: 200px;
+  }
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+ */

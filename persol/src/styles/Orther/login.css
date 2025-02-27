@@ -1,0 +1,136 @@
+
+.log-in {
+  background-color: #ffffff;
+  height: 700px;
+ 
+
+  position: relative;
+}
+
+
+.log-in .join-the-fun {
+  color: transparent;
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 60px;
+  font-weight: 700;
+  left: 80px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 280px;
+  white-space: nowrap;
+  width: 698px;
+}
+
+ .log-in .overlap-group-1 {
+  background-color: #e5f0f3;
+  border-radius: 30px;
+  height: 400px;
+  left: 600px;
+  position: absolute;
+  top: 130px;
+  width: 480px;
+} 
+
+
+.text-wrapper-P {
+  color: #000000;
+}
+.brand {
+  color: #bc3a80;
+}
+
+
+.log-in .overlap-group-1 {
+  background-color: #e5f0f3;
+  border-radius: 20px;
+  padding: 30px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+ 
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.username, .password {
+  font-family: "Poppins-Bold", Helvetica;
+  font-size: 18px;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: left;
+}
+
+
+.fillusername, .fillpassword {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #4aa6fa;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.fillusername:focus, .fillpassword:focus {
+  border-color: #bc3a80;
+  box-shadow: 0px 0px 8px rgba(188, 58, 128, 0.5);
+  outline: none;
+}
+
+.loginP {
+  width: 100%;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #4aa6fa;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.loginP:hover {
+  background-color: #bc3a80;
+  transform: scale(1.05);
+}
+
+.loginP:active {
+  transform: scale(0.95);
+}
+
+.create-account {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.create-account:hover {
+  text-decoration: underline;
+}
+
+
+
+   .error {
+  color: red; 
+  font-size: 15px;
+  margin-top: 3px; 
+  margin-left: 10px; 
+  text-align: left; 
+  display: block; 
+  transition: opacity 0.5s ease-in-out;
+}   
+
+.fade-out {
+  opacity: 1;
+  animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}

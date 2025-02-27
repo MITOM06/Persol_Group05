@@ -1,0 +1,319 @@
+/* Toàn bộ trang chi tiết */
+.product-detail-page {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.product-main {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Container cho ảnh chính (khoảng 60% chiều rộng, tuỳ chỉnh) */
+.product-image-container {
+  width: 60%;
+}
+
+.product-main-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Container cho thông tin (khoảng 40% chiều rộng, tuỳ chỉnh) */
+.product-info-container {
+  width: 40%;
+  text-align: left;
+}
+
+/* Giá, rating, sold */
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.start,
+.sold {
+  margin: 0.25rem 0;
+}
+
+/* Chi tiết sản phẩm */
+.product-detailsp {
+  margin-top: 1rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #555;
+  margin-right: 1rem;
+}
+
+.detail-value {
+  color: #333;
+  text-align: left;
+}
+
+/* 2 dòng cuối label ở trên, value ở dưới */
+.detail-row-fit,
+.detail-row-bridge {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Nút "ADD TO CART" */
+.buy-button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+
+/* Khu vực "Other Color Variants" */
+.product-variants {
+  margin-top: 2rem;
+
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.product-variants h3 {
+  margin-bottom: 1rem;
+}
+
+/* Bọc slider + nút trái/phải */
+.slider-container-variants {
+  position: relative;
+  overflow: hidden;
+  /* ẩn phần tràn khi scroll */
+  width: 100%;
+  border-radius: 8px;
+  padding: 0.5rem 0;
+  /* padding dọc, tuỳ ý */
+  height: 560px;
+
+
+}
+
+/* Thanh cuộn ngang chứa các biến thể */
+.variants-slider {
+  display: flex;
+  gap: 20.5rem;
+  overflow-x: auto;
+  /* cho phép cuộn ngang */
+  scroll-behavior: smooth;
+  /* cuộn mượt */
+  padding: 0 3rem;
+  /* chừa khoảng trống hai bên cho nút trái/phải */
+  align-items: center;
+  min-height: 180px;
+  /* để đảm bảo ảnh không bị cắt, tuỳ chỉnh */
+}
+
+.variant-image {
+  padding-left: 200px;
+  padding-right: 100px;
+  width: 80%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.variant-image:hover {
+  transform: scale(1.05);
+  /* phóng to nhẹ khi hover */
+}
+
+/* Nút mũi tên trái/phải */
+.slider-arrow {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  background: #333;
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  opacity: 0.8;
+  z-index: 2;
+  /* để nút nằm trên các ảnh */
+  border-radius: 4px;
+  font-size: 1.2rem;
+  transition: opacity 0.2s ease;
+}
+
+.slider-arrow:hover {
+  opacity: 1;
+}
+
+.slider-arrow.left {
+  left: 10px;
+  /* vị trí nút trái */
+}
+
+.slider-arrow.right {
+  right: 50px;
+  /* vị trí nút phải */
+}
+
+/* Ẩn scrollbar trên Chrome, Safari... */
+.variants-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* Keyframes hiệu ứng fade in cho ảnh sản phẩm */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Keyframes hiệu ứng slide in từ bên phải cho thông số sản phẩm */
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Áp dụng hiệu ứng cho container ảnh và thông số */
+.product-image-container {
+  /* Đảm bảo container ban đầu có trạng thái mờ */
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.product-info-container {
+  opacity: 0;
+  animation: slideInFromRight 1s ease forwards;
+}
+
+/* Khu vực Other Variants */
+.other-products {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.other-products h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Khu vực "You May Also Like" */
+.you-may-like {
+  margin-top: 1rem;
+  padding: 1rem;
+  position: relative;
+  top: -10px;
+  /* Đẩy lên một chút */
+}
+
+/* Tiêu đề */
+.you-may-like h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Thanh cuộn ngang chứa sản phẩm */
+.you-may-like-slider {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  align-items: center;
+}
+
+/* Ẩn thanh cuộn trên Chrome, Safari */
+.you-may-like-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.other-products {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.other-products h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* Container chứa danh sách sản phẩm với thanh cuộn ngang */
+.other-products-list {
+  display: flex;
+  gap: 15px;
+  overflow-x: scroll;
+  /* Cho phép cuộn ngang */
+  padding-bottom: 10px;
+  /* Dành chỗ cho thanh cuộn */
+  scrollbar-color: #ccc #f8f8f8;
+  /* Firefox */
+  scrollbar-width: thin;
+}
+
+/* Tùy chỉnh thanh cuộn cho Chrome, Safari */
+.other-products-list::-webkit-scrollbar {
+  height: 8px;
+}
+
+.other-products-list::-webkit-scrollbar-track {
+  background: #f8f8f8;
+  border-radius: 4px;
+}
+
+.other-products-list::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+/* Các sản phẩm hiển thị lớn hơn */
+.other-product-item {
+  flex: 0 0 auto;
+  width: 200px;
+  /* Tăng kích thước item */
+  text-align: center;
+  cursor: pointer;
+}
+
+.other-product-image {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.other-product-name {
+  font-size: 1rem;
+  /* Tăng kích thước font */
+  margin-top: 5px;
+}
+
+.iconc {
+  font-size: 100px;
+  cursor: pointer;
+  color: rgb(9, 9, 14);
+  padding-left: 30px;
+}

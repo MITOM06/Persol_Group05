@@ -1,0 +1,206 @@
+
+/* Homepage.module.css */
+
+
+
+.RaybanHomePage{
+    font-family: 'Playfair Display', serif;
+      width: 100%; 
+      border-collapse: separate; /* chia các ô ra một khoảng không*/
+      border-spacing: 30px; /* Tạo khoảng cách giữa các ô */
+      display: flex;
+      flex-direction: row; /* sắp xếp theo chiều ngang */
+      flex-wrap: wrap;  /* Cho phép các phần tử tự động xuống dòng */
+    
+    }
+  
+    .RaybanHomePage td{
+      display: flex;
+      flex-direction: row; /* sắp xếp theo chiều ngang */
+      flex-wrap: wrap;  /* Cho phép các phần tử tự động xuống dòng */
+    }
+  
+    .fa-star-o{
+      color: #ccc;
+      
+    }
+    .fa-star {
+      color: gold; /* Màu vàng cho sao đầy đủ */
+    }
+    .rayan-btn-title{
+    
+    text-decoration: none;
+    color: #003366;
+  
+    }
+    .back-page{
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+    .btn-back-page{
+      background-color: transparent;
+      color: #0583b5;
+      font-size: 20px;
+      text-decoration: none;
+    }
+    .btn-back-page-1{
+      color: #636363;
+      font-size: 20px;
+      text-decoration: none;
+    }
+  
+    .rayban-image-container {
+      position: relative;
+      display: inline-block;
+      width: 300px; /* Chiều rộng cố định */
+      height: 100px; /* Chiều cao cố định */
+      
+      
+    }
+  
+    .rayban-hover-image{
+      width: 100px;
+      transition: transform 0.3s ease-in-out;
+    }
+    .rayban-hover-image:hover{
+      transform: scale(1.05);
+    }
+
+    .rayban-text{
+      padding-top: 100px;
+      
+    }
+    /* Đặt container của hình ảnh ở chế độ relative */
+  
+    .react-link, .react-link:visited, .react-link:hover, .react-link:active {
+      text-decoration: none; /* Loại bỏ gạch chân */
+      color: inherit; /* Kế thừa màu sắc từ phần tử cha */
+      font-size: inherit;
+    }
+  
+  .image-homepage {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dancing Script', cursive;
+   
+  
+  }
+  .image-homepage-text{
+    position: absolute;
+    top: 200px;
+    right: 200px;
+    color: white;  /* Màu chữ của nút */
+    border: none;  /* Không có viền */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ thay đổi khi rê chuột vào nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+  
+  }
+  /* Định dạng nút */
+  .image-homepage-button {
+    font-family: 'Great Vibes', cursive;
+    position: absolute;
+    bottom: 400px;
+    right: 375px;
+    padding: 5px 20px; /* Đệm xung quanh chữ */
+    background-color: #000000; /* Màu nền của nút */
+    color: white;  /* Màu chữ của nút */
+    border: none;  /* Không có viền */
+    font-size: 10px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ thay đổi khi rê chuột vào nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+  }
+  
+  /* Hiệu ứng hover khi rê chuột lên nút */
+  .image-homepage-button:hover {
+    background-color: #585757; /* Màu nền thay đổi khi hover */
+  }
+  .image-homepage-1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Dancing Script', cursive;
+  
+  
+  }
+  .image-homepage-text-1{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: white;  /* Màu chữ của nút */
+    border: none;  /* Không có viền */
+    font-size: 16px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ thay đổi khi rê chuột vào nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+  
+  }
+  /* Định dạng nút */
+  .image-homepage-button-1 {
+    font-family: 'Great Vibes', cursive;
+    position: absolute;
+    bottom: 400px;
+    left: 275px;
+    padding: 5px 20px; /* Đệm xung quanh chữ */
+    background-color: #000000; /* Màu nền của nút */
+    color: white;  /* Màu chữ của nút */
+    border: none;  /* Không có viền */
+    font-size: 10px; /* Kích thước chữ */
+    cursor: pointer; /* Con trỏ thay đổi khi rê chuột vào nút */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+  }
+  
+  /* Hiệu ứng hover khi rê chuột lên nút */
+  .image-homepage-button-1:hover {
+    background-color: #585757; /* Màu nền thay đổi khi hover */
+  }
+  
+    .rayban-newproduct{
+      position: absolute; /* Đặt chữ NEW ở góc trên bên trái ảnh */
+    top: 1px;
+    left: 2px;
+    background-color: red;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+  
+     
+    }
+    .rayban-add-to-cart-notification{
+      background-color: #28a745;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      z-index: 9999;
+      animation: fadeInOut 3s ease-out forwards; 
+    }
+    
+    /* Keyframes để tạo hiệu ứng fade-in, giữ nguyên một lúc rồi fade-out */
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0; /* Bắt đầu từ 0 (ẩn) */
+        transform: translateY(-20px); /* Thêm hiệu ứng di chuyển lên một chút */
+      }
+      20% {
+        opacity: 1; /* Hiển thị thông báo */
+        transform: translateY(0); /* Về vị trí ban đầu */
+      }
+      80% {
+        opacity: 1; /* Giữ thông báo hiển thị một chút */
+      }
+      100% {
+        opacity: 0; /* Mờ dần */
+        transform: translateY(20px); /* Di chuyển xuống một chút khi biến mất */
+      }
+    }
+   
+  
+  /* Style cho container Swiper */
+  

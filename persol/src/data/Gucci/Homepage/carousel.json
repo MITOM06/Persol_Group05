@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "SQUARE FRAME SUNGLASSES",
+        "image": "/gucciimg/homepage/1.png",
+        "price": "$ 435",
+        "model": "Style 819535 J0740 2750",
+        "star": 5.0
+      },
+      {
+        "id": 1,
+        "name": "SQUARE FRAME SUNGLASSES",
+        "image": "/gucciimg/homepage/4.png",
+        "price": "$ 435",
+        "model": "Style 819535 J0740 2750",
+        "star": 5.0
+      },
+      {
+        "id": 1,
+        "name": "SQUARE FRAME SUNGLASSES",
+        "image": "/gucciimg/homepage/5.png",
+        "price": "$ 435",
+        "model": "Style 819535 J0740 2750",
+        "star": 5.0
+      }
+]

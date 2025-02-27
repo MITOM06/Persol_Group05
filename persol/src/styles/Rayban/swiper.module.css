@@ -1,0 +1,49 @@
+.swiperContainer {
+    width: 100%;
+    margin: 0 auto;  /* Center the swiper container */
+    height: auto;   /* Đặt chiều cao cho Swiper */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;;
+}
+
+.swiperSlide {
+    width: 100%;
+    background-color: #f1f1f1;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.swiperImage {
+    width: 200px;
+    height: auto;  /* Đảm bảo hình ảnh có chiều cao đầy đủ trong slide */
+    object-fit: contain;  /* Đảm bảo hình ảnh không bị cắt */
+    border-radius: 15px;
+}
+
+/* Định vị các nút điều hướng ra ngoài Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Nút Next nằm bên phải */
+.swiper-button-next {
+  right: -40px;
+}
+
+/* Nút Prev nằm bên trái */
+.swiper-button-prev {
+  left: -40px;
+}
+
