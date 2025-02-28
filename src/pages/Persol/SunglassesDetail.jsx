@@ -7,7 +7,11 @@ import Navbarp from "../../components/Navbarp";
 import { FaExchangeAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-// Hằng chứa ảnh chính (sử dụng image2 để hiển thị trang detail, bạn có thể giữ nguyên cho trang chi tiết)
+// Import các module cần thiết cho chức năng download DOCX
+import { Document, Packer, Paragraph, TextRun, ImageRun } from "docx";
+import { saveAs } from "file-saver";
+
+// Hằng chứa ảnh chính (sử dụng image2 để hiển thị trang detail)
 const sunglassesImages = {
   "0PO0202S__24_31__P21__shad__qt.avif": require("../../imgs/imgsgld/0PO0202S__24_31__P21__shad__qt.avif"),
   "0PO3272S__95_48__STD__shad__qt.avif": require("../../imgs/imgsgld/0PO3272S__95_48__STD__shad__qt.avif"),
@@ -47,7 +51,6 @@ const variantImages = {
   "variant11.avif": require("../../imgs/imgsgld/0PO0649__24_57__P21__shad__qt.avif"),
   "variant12.avif": require("../../imgs/imgsgld/0PO0649__95_31__P21__shad__qt.avif"),
   "variant13.avif": require("../../imgs/imgsgld/0PO0649__95_S3__P21__shad__qt.avif"),
-
 
   "variant17.avif": require("../../imgs/imgsgld/0PO3357S__204_R5__P21__shad__qt.avif"),
   "variant18.avif": require("../../imgs/imgsgld/0PO3357S__24_31__P21__shad__qt.avif"),
@@ -89,16 +92,21 @@ const variantImages = {
   "variant45.avif": require("../../imgs/imgsgld/0PO3336S__204_4E__P21__shad__qt.avif"),
   "variant46.avif": require("../../imgs/imgsgld/0PO3336S__95_S3__P21__shad__qt.avif"),
 
-
   "variant47.avif": require("../../imgs/imgsgld/0PO3327S__107148__P21__shad__qt.avif"),
   "variant48.avif": require("../../imgs/imgsgld/0PO3327S__24_51__P21__shad__qt.avif"),
   "variant49.avif": require("../../imgs/imgsgld/0PO3327S__95_31__P21__shad__qt.avif"),
   // ... các variant khác nếu có
 };
 
+// Helper function để lấy URL ảnh thực sự (trường hợp require trả về đối tượng có thuộc tính default)
+const getImageUrl = (img) => {
+  if (typeof img === "string") return img;
+  if (img && img.default) return img.default;
+  return img;
+};
+
 const SunglassesDetail = () => {
   const { id } = useParams();
-
   const navigate = useNavigate();
   const sliderRef = useRef(null);
 
@@ -115,11 +123,9 @@ const SunglassesDetail = () => {
 
   // Mảng chứa ảnh biến thể (giữ nguyên)
   const productVariantImages = [];
-
   if (product.variantImage2) productVariantImages.push(product.variantImage2);
   if (product.variantImage3) productVariantImages.push(product.variantImage3);
   if (product.variantImage4) productVariantImages.push(product.variantImage4);
-  // ... các variant khác
 
   // Hàm cuộn slider cho ảnh biến thể
   const scrollRight = () => {
@@ -162,6 +168,68 @@ const SunglassesDetail = () => {
     }
     localStorage.setItem("cart", JSON.stringify(cart));
     alert("Product has been added to cart!");
+  };
+
+  // Hàm download file DOCX chứa thông tin sản phẩm
+  const downloadProductDoc = async () => {
+    try {
+      // Lấy URL của ảnh image2 bằng helper getImageUrl
+      const imageUrl = getImageUrl(sunglassesImages[product.image2]);
+      console.log("Image URL:", imageUrl);
+
+      const response = await fetch(imageUrl);
+      if (!response.ok) {
+        throw new Error(`Không thể tải ảnh từ URL: ${imageUrl}`);
+      }
+      const blob = await response.blob();
+      const buffer = await blob.arrayBuffer();
+
+      // Tạo ImageRun với ảnh đã chuyển buffer
+      const imageRun = new ImageRun({
+        data: buffer,
+        transformation: { width: 200, height: 200 },
+      });
+
+      // Tạo tài liệu DOCX với thông tin sản phẩm và ảnh
+      const doc = new Document({
+        sections: [
+          {
+            children: [
+              new Paragraph({
+                children: [
+                  new TextRun({
+                    text: "Product Information",
+                    bold: true,
+                    size: 28,
+                  }),
+                ],
+              }),
+              new Paragraph({ children: [imageRun] }),
+              new Paragraph(`Name: ${product.name || "N/A"}`),
+              new Paragraph(`Price: ${product.price || "N/A"}`),
+              new Paragraph(`Rating: ${product.start || "N/A"} / 5`),
+              new Paragraph(`Sold: ${product.sold || "N/A"}`),
+              new Paragraph(`Model code: ${product["Model code"] || "N/A"}`),
+              new Paragraph(`Front color: ${product["Front color"] || "N/A"}`),
+              new Paragraph(`Lens color: ${product["Lens color"] || "N/A"}`),
+              new Paragraph(`LENS MATERIAL: ${product["LENS MATERIAL"] || "N/A"}`),
+              new Paragraph(`Frame Material: ${product["Frame Material"] || "N/A"}`),
+              new Paragraph(`Measurements: ${product["Measurements"] || "N/A"}`),
+              new Paragraph(`Fit: ${product["Fit"] || "N/A"}`),
+              new Paragraph(`Bridge choice & nosepad: ${product["Bridge choice & nosepad"] || "N/A"}`),
+            ],
+          },
+        ],
+      });
+
+      // Chuyển tài liệu thành Blob và lưu file DOCX
+      const docBlob = await Packer.toBlob(doc);
+      saveAs(docBlob, "product-info.docx");
+      alert("File downloaded successfully!");
+    } catch (error) {
+      console.error("Error generating document:", error);
+      alert("Error downloading file");
+    }
   };
 
   return (
@@ -221,7 +289,17 @@ const SunglassesDetail = () => {
             <button className="buy-button" onClick={handleAddToCart}>
               ADD TO CART
             </button>
-            <Link to="/compare"><FaExchangeAlt className="iconc" /></Link>
+            <p></p>
+            <button
+              className="download-doc-button"
+              onClick={downloadProductDoc}
+              style={{ marginTop: "10px", padding: "20px 20px", cursor: "pointer" }}
+            >
+              DOWNLOAD
+            </button>
+            <Link to="/compare">
+              <FaExchangeAlt className="iconc" />
+            </Link>
           </div>
         </div>
         <div className="product-variants">
