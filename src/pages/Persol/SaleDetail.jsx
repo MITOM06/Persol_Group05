@@ -6,7 +6,8 @@ import Logop from "../../components/Logop";
 import Navbarp from "../../components/Navbarp";
 import { FaExchangeAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import { Document, Packer, Paragraph, TextRun, ImageRun } from "docx";
+import { saveAs } from "file-saver";
 // Hằng chứa ảnh chính (sử dụng image2 để hiển thị trang detail)
 const saleImages = {
   "0PO3305S__1052S3__P21__shad__qt.avif": require("../../imgs/imgsale/0PO3305S__1052S3__P21__shad__qt.avif"),
@@ -44,6 +45,13 @@ const variantImages = {
   "variant24.avif": require("../../imgs/imgsale/0PO3292V__1188__P21__shad__qt.avif"),
   "variant25.avif": require("../../imgs/imgsale/0PO3292V__1186__P21__shad__qt.avif"),
 };
+// Helper function để lấy URL ảnh thực sự (trường hợp require trả về đối tượng có thuộc tính default)
+const getImageUrl = (img) => {
+  if (typeof img === "string") return img;
+  if (img && img.default) return img.default;
+  return img;
+};
+
 
 const SaleDetail = () => {
   const { id } = useParams();
@@ -110,7 +118,68 @@ const SaleDetail = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
     alert("Product has been added to cart!");
   };
-
+ // Hàm download file DOCX chứa thông tin sản phẩm
+   const downloadProductDoc = async () => {
+     try {
+       // Lấy URL của ảnh image2 bằng helper getImageUrl
+       const imageUrl = getImageUrl(saleImages[product.image2]);
+       console.log("Image URL:", imageUrl);
+ 
+       const response = await fetch(imageUrl);
+       if (!response.ok) {
+         throw new Error(`Không thể tải ảnh từ URL: ${imageUrl}`);
+       }
+       const blob = await response.blob();
+       const buffer = await blob.arrayBuffer();
+ 
+       // Tạo ImageRun với ảnh đã chuyển buffer
+       const imageRun = new ImageRun({
+         data: buffer,
+         transformation: { width: 200, height: 200 },
+       });
+ 
+       // Tạo tài liệu DOCX với thông tin sản phẩm và ảnh
+       const doc = new Document({
+         sections: [
+           {
+             children: [
+               new Paragraph({
+                 children: [
+                   new TextRun({
+                     text: "Product Information",
+                     bold: true,
+                     size: 28,
+                   }),
+                 ],
+               }),
+               new Paragraph({ children: [imageRun] }),
+               new Paragraph(`Name: ${product.name || "N/A"}`),
+               new Paragraph(`Price: ${product.price || "N/A"}`),
+               new Paragraph(`newPrice: ${product.newPrice || "N/A"}`),
+               new Paragraph(`Rating: ${product.start || "N/A"} / 5`),
+               new Paragraph(`Sold: ${product.sold || "N/A"}`),
+               new Paragraph(`Model code: ${product["Model code"] || "N/A"}`),
+               new Paragraph(`Front color: ${product["Front color"] || "N/A"}`),
+               new Paragraph(`Lens color: ${product["Lens color"] || "N/A"}`),
+               new Paragraph(`LENS MATERIAL: ${product["LENS MATERIAL"] || "N/A"}`),
+               new Paragraph(`Frame Material: ${product["Frame Material"] || "N/A"}`),
+               new Paragraph(`Measurements: ${product["Measurements"] || "N/A"}`),
+               new Paragraph(`Fit: ${product["Fit"] || "N/A"}`),
+               new Paragraph(`Bridge choice & nosepad: ${product["Bridge choice & nosepad"] || "N/A"}`),
+             ],
+           },
+         ],
+       });
+ 
+       // Chuyển tài liệu thành Blob và lưu file DOCX
+       const docBlob = await Packer.toBlob(doc);
+       saveAs(docBlob, "product-info.docx");
+       alert("File downloaded successfully!");
+     } catch (error) {
+       console.error("Error generating document:", error);
+       alert("Error downloading file");
+     }
+   };
   return (
     <>
       <Logop />
@@ -174,6 +243,14 @@ const SaleDetail = () => {
 
             <button className="buy-button" onClick={handleAddToCart}>
               ADD TO CART
+            </button>
+            <p></p>
+            <button
+              className="download-doc-button"
+              onClick={downloadProductDoc}
+              style={{ marginTop: "10px", padding: "20px 20px", cursor: "pointer" }}
+            >
+              DOWNLOAD
             </button>
           <Link to="/compare"><FaExchangeAlt className="iconc" /></Link>
           </div>
