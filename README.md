@@ -1,33 +1,64 @@
-Persol
+# Persol — Multi-brand Eyewear Storefront
 
-=======================================
+> 🎓 **Academic project** — semester I project at FPT Aptech (2025), built by a team of four
+> students and supervised by Lê Thanh Nhân. Not a commercial product.
 
-+ Supervisor                          : LÊ THANH NHÂN
+A front-end e-commerce site for premium eyewear, built as a React single-page app. It carries four
+brand storefronts — **Persol, Ray-Ban, Gucci and Tom Ford** — each with its own navigation,
+catalogue and search.
 
-+ Semester                            : I            
+**Live demo:** https://persol-group05-eight.vercel.app
 
-+ Batch No                            : T5.2410.E0
+**Stack:** React 19 · React Router 7 · Bootstrap 5 · Swiper / Slick carousels · Create React App
 
-+ Group No:                          : Group05
+> Brand names and product images belong to their owners; this site is not
+> affiliated with or endorsed by them.
 
-+ List Of Member:
+![Persol home page](docs/screenshots/home.jpg)
 
-               1. Trần Phúc Khang        (Student1614879)
+| Catalogue | Tom Ford storefront |
+|---|---|
+| ![Persol sunglasses catalogue](docs/screenshots/sunglasses.jpg) | ![Tom Ford storefront](docs/screenshots/tomford.jpg) |
 
-               2. Mai Thanh Đạt         (Student1614903)
+---
 
-               3.Nguyễn Kim Minh        (Student1614880)   
+## Features
 
-                4.Nguyễn Anh Đức        (Student1614894)   
+- Four brand storefronts with their own header, logo and search
+- Catalogues by category — sunglasses, eyeglasses, new arrivals, sale — with detail pages
+- Product ratings, image carousels and a product **compare** view
+- Download a product sheet as a Word document (docx + file-saver)
+- Cart, contact page, login / register screens and a sitemap
+- Product data kept as local JSON in `src/data/` (no backend)
 
-=======================================
+## Running locally
 
-Documentations : https://github.com/MITOM06/Persol_Group05/tree/b0b81c9ed0488d637bfc9be7bc931351dd666582/Documentations
+Node 18+:
 
-=======================================
+```bash
+npm install
+npm start          # http://localhost:3000
+npm run build      # production build in build/
+```
 
-Published website :https://persol-group05-p3s3.vercel.app/
+## Repository layout
 
-=======================================
+```
+src/
+├── pages/        Persol/, Rayban/, Gucci/, TomFord/, Orther/ (cart, compare, contact, auth)
+├── components/   per-brand navbars and logos, cart, compare context, footer, sitemap
+├── data/         product catalogues per brand
+└── styles/
+public/           product images
+Documentations/   installation guide, user guide, project report, status reports
+```
 
-Thank you for visit our website.
+## Team
+
+Built in 2025 as the semester I project at Aptech (batch T5.2410.E0, group 05), supervised by
+Lê Thanh Nhân.
+
+- **Trần Phúc Khang** ([@MITOM06](https://github.com/MITOM06))
+- **Mai Thanh Đạt**
+- **Nguyễn Kim Minh**
+- **Nguyễn Anh Đức**
