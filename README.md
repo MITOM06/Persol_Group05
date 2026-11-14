@@ -1,5 +1,8 @@
 # Persol — Multi-brand Eyewear Storefront
 
+> 🎓 **Academic project** — semester I project at FPT Aptech (2025), built by a team of four
+> students and supervised by Lê Thanh Nhân. Not a commercial product.
+
 A front-end e-commerce site for premium eyewear, built as a React single-page app. It carries four
 brand storefronts — **Persol, Ray-Ban, Gucci and Tom Ford** — each with its own navigation,
 catalogue and search.
@@ -8,7 +11,7 @@ catalogue and search.
 
 **Stack:** React 19 · React Router 7 · Bootstrap 5 · Swiper / Slick carousels · Create React App
 
-> Educational project. Brand names and product images belong to their owners; this site is not
+> Brand names and product images belong to their owners; this site is not
 > affiliated with or endorsed by them.
 
 ---
