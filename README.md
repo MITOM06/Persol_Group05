@@ -18,6 +18,7 @@ catalogue and search.
 - Four brand storefronts with their own header, logo and search
 - Catalogues by category — sunglasses, eyeglasses, new arrivals, sale — with detail pages
 - Product ratings, image carousels and a product **compare** view
+- Download a product sheet as a Word document (docx + file-saver)
 - Cart, contact page, login / register screens and a sitemap
 - Product data kept as local JSON in `src/data/` (no backend)
 
