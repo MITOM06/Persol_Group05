@@ -1,33 +1,54 @@
-Persol
+# Persol — Multi-brand Eyewear Storefront
 
-=======================================
+A front-end e-commerce site for premium eyewear, built as a React single-page app. It carries four
+brand storefronts — **Persol, Ray-Ban, Gucci and Tom Ford** — each with its own navigation,
+catalogue and search.
 
-+ Supervisor                          : LÊ THANH NHÂN
+**Live demo:** https://persol-group05-eight.vercel.app
 
-+ Semester                            : I            
+**Stack:** React 19 · React Router 7 · Bootstrap 5 · Swiper / Slick carousels · Create React App
 
-+ Batch No                            : T5.2410.E0
+> Educational project. Brand names and product images belong to their owners; this site is not
+> affiliated with or endorsed by them.
 
-+ Group No:                          : Group05
+---
 
-+ List Of Member:
+## Features
 
-               1. Trần Phúc Khang        (Student1614879)
+- Four brand storefronts with their own header, logo and search
+- Catalogues by category — sunglasses, eyeglasses, new arrivals, sale — with detail pages
+- Product ratings, image carousels and a product **compare** view
+- Cart, contact page, login / register screens and a sitemap
+- Product data kept as local JSON in `src/data/` (no backend)
 
-               2. Mai Thanh Đạt         (Student1614903)
+## Running locally
 
-               3.Nguyễn Kim Minh        (Student1614880)   
+Node 18+:
 
-                4.Nguyễn Anh Đức        (Student1614894)   
+```bash
+npm install
+npm start          # http://localhost:3000
+npm run build      # production build in build/
+```
 
-=======================================
+## Repository layout
 
-Documentations : https://github.com/MITOM06/Persol_Group05/tree/b0b81c9ed0488d637bfc9be7bc931351dd666582/Documentations
+```
+src/
+├── pages/        Persol/, Rayban/, Gucci/, TomFord/, Orther/ (cart, compare, contact, auth)
+├── components/   per-brand navbars and logos, cart, compare context, footer, sitemap
+├── data/         product catalogues per brand
+└── styles/
+public/           product images
+Documentations/   installation guide, user guide, project report, status reports
+```
 
-=======================================
+## Team
 
-Published website :https://persol-group05-p3s3.vercel.app/
+Built in 2025 as the semester I project at Aptech (batch T5.2410.E0, group 05), supervised by
+Lê Thanh Nhân.
 
-=======================================
-
-Thank you for visit our website.
+- **Trần Phúc Khang** ([@MITOM06](https://github.com/MITOM06))
+- **Mai Thanh Đạt**
+- **Nguyễn Kim Minh**
+- **Nguyễn Anh Đức**
