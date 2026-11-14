@@ -14,6 +14,12 @@ catalogue and search.
 > Brand names and product images belong to their owners; this site is not
 > affiliated with or endorsed by them.
 
+![Persol home page](docs/screenshots/home.jpg)
+
+| Catalogue | Tom Ford storefront |
+|---|---|
+| ![Persol sunglasses catalogue](docs/screenshots/sunglasses.jpg) | ![Tom Ford storefront](docs/screenshots/tomford.jpg) |
+
 ---
 
 ## Features
